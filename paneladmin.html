@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+
+        <title>  Panel Admin   || Numme </title>
+
+        <!-- Bootstrap CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">  
+        <link href="css/owl.carousel.min.css" rel="stylesheet">  
+        <link href="css/owl.theme.default.min.css" rel="stylesheet">  
+        <link href="css/jquery.scrollbar.css" rel="stylesheet">  
+        <link rel="stylesheet" href="css/fontawesome.min.css"> 
+
+        <!-- Google fonts CSS -->
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+
+        <!-- Main Styles CSS -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+    </head>
+    <body class="trading-page paneladmin-page">
+        <div class="wrapper">
+            <div class="alert alert-dismissible fade show" role="alert">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="text-box">
+                                <p>¡Bienvenido! Estamos aún en fase beta, así que puede que encuentres algún error. Si es así, disculpa, y <strong> háznoslo saber </strong>para poder mejorar!</p>
+                                <button type="button" id="close" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true"><img src="img/cross-icon.svg"  alt=""/></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <header class="header header-second">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="header-inner">
+                                <div class="header-logo">
+                                    <a href="index.html"><img src="img/logo.svg" alt="" /></a>
+                                </div>
+                                <div class="header-nave">
+                                    <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="social-network.html">Social Network</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="trading.html">Trading</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="trading-copy.html">Copy Trading</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="news.html">News</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pricing.html">Pricing</a>
+                                        </li>
+                                    </ul>
+                                    <div class="login-right">
+                                        <ul>
+                                            <li class="dropdown setting">
+                                                <a href="#" id="dropdownMenuButton6" data-toggle="dropdown"><img src="img/gear-icon.svg" alt="" /></a>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton6">
+                                                    <div class="content">
+                                                        <div class="demo">
+                                                            <div class="scrollbar-inner">
+                                                                <div class="visualizattion">
+                                                                    <h3>VISUALIZATION</h3>
+                                                                    <div class="visualizattion-box">
+                                                                        <p>Dark Mode</p>
+                                                                        <label class="switch">
+                                                                            <input type="checkbox">
+                                                                            <span class="slider round"></span>
+                                                                        </label>
+                                                                    </div>  
+                                                                </div>  
+                                                                <div class="language">
+                                                                    <h3>LANGUAGE</h3>
+                                                                    <form action="#">
+                                                                        <input type="text" class="form-control" placeholder="Buscar …" />
+                                                                        <ul class="buy-alarm">
+                                                                            <li>
+                                                                                <input type="radio" id="test1" name="radio-group" checked>
+                                                                                <label for="test1">English</label>
+                                                                            </li>
+                                                                            <li>
+                                                                                <input type="radio" id="test2" name="radio-group">
+                                                                                <label for="test2">Spanish</label>
+                                                                            </li>
+                                                                            <li>
+                                                                                <input type="radio" id="test3" name="radio-group">
+                                                                                <label for="test3">French</label>
+                                                                            </li>
+                                                                            <li>
+                                                                                <input type="radio" id="test4" name="radio-group">
+                                                                                <label for="test4">United State</label>
+                                                                            </li>
+                                                                            <li>
+                                                                                <input type="radio" id="test5" name="radio-group">
+                                                                                <label for="test5">Japanese</label>
+                                                                            </li>
+                                                                            <li>
+                                                                                <input type="radio" id="test6" name="radio-group">
+                                                                                <label for="test6">Spanish</label>
+                                                                            </li>
+                                                                            <li>
+                                                                                <input type="radio" id="test7" name="radio-group">
+                                                                                <label for="test7">Urdu</label>
+                                                                            </li>
+                                                                        </ul> 
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="#" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fbaez <img src="img/down-arrow-white.png" alt="" /></a>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                                    <ul>
+                                                        <li><a href="#"><img src="img/document-blue.png" alt=""/> Editar datos personales</a></li>
+                                                        <li><a href="#"><img src="img/view-thumb-blue.png" alt=""/> Panel Administrador</a></li>
+                                                        <li><a href="#"><img src="img/gear-blue.png" alt=""/> Configuración personal</a></li>
+                                                        <li><a href="#"><img src="img/graph-bar-blue.png" alt=""/> Portfolio</a></li>
+                                                        <li><a href="#"><img src="img/jewel-blue.png" alt=""/> Hacerte PRO</a></li>
+                                                        <li><a href="#"><img src="img/skip-icon.png" alt=""/> Cerrar Sesión</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a id="notification-menu" href="#"><img  class="bell-icon" src="img/bell-icon-white.svg" alt="" /></a> <span class="count">21</span>
+                                                <div class="notification-submenu">
+                                                    <ul>
+                                                        <li>El <strong>Bitcoin</strong> ha subido hasta los $13.455</li>
+                                                        <li><strong>Ethereum</strong> ha bajado un 1,6%
+                                                            en las últimas 24 horas.</li>
+                                                        <li><strong>Ethereum</strong> ha bajado un 1,6%
+                                                            en las últimas 24 horas.</li>
+                                                    </ul>
+                                                    <div class="cnfigurar-avisos">
+                                                        <a href="#"><img src="img/toggles-icon.png" alt="" />Configurar mis avisos</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="menu-icon">
+                                            <a href="#"><img src="img/menu-icon.png" alt="" /></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>  
+            <section class="trading-banner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="trading-banner-inner">
+                                <div class="title">
+                                    <h2>Panel de administración</h2>
+                                    <p>Edita y visualiza tu información de usuario</p>
+                                </div>
+                                <div class="panel-administrac">  
+                                    <a class="personal-conf" href="#">Configuración personal</a>
+                                    <div class="panel-administrac-inner">
+                                        <a class="editar-mis" href="#" data-toggle="modal" data-target="#exampleModal">Editar mis datos <img src="img/align-justify-icon.svg" alt="" /></a>
+                                        <a class="hazte-pro" href="#" data-toggle="modal" data-target="#exampleModal2">Hazte pro <img src="img/jewel-icon.svg" alt="" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+            <section class="paneladmin-sec">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="paneladmin-account">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="paneladmin-account-owl owl-carousel owl-theme">
+                                            <div class="item">
+                                                <div class="paneladmin-account-box">
+                                                    <div class="account-title">
+                                                        <h3>Saldo de cuenta</h3>
+                                                        <div class="dropdown">
+                                                            <a class="anadir" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Añadir</a>
+                                                            <div class="dropdown-menu saldo-dropdown" aria-labelledby="dropdownMenuButton">
+                                                                <h4>ANADIAR SALDO</h4>
+                                                                <form>
+                                                                    <div class="form-group">
+                                                                        <label>DIRECCIÓN BITCOIN</label>
+                                                                        <input type="text" class="form-control" placeholder="bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq" />
+                                                                        <input type="submit" class="btn-defult"  value="Añadir saldo"/>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="acount-balance">
+                                                        <h3>81</h3>
+                                                        <span>BTC</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="paneladmin-account-box">
+                                                    <div class="account-title">
+                                                        <h3>Operaciones realizadas</h3> 
+                                                    </div>
+                                                    <div class="operations-carried">
+                                                        <div class="multipal-tabs">
+                                                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">TODAY</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">WEEK</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">MONTH</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" id="pills-times-tab" data-toggle="pill" href="#pills-times" role="tab" aria-controls="pills-times" aria-selected="false">ALL TIME</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="tab-content" id="pills-tabContent">
+                                                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                                                <div class="operations-carried-inner">
+                                                                    <ul>
+                                                                        <li>
+                                                                            10
+                                                                            <span>operaciones</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            2
+                                                                            <span>pro</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            8
+                                                                            <span>básicas</span>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                                                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                                                            <div class="tab-pane fade" id="pills-times" role="tabpanel" aria-labelledby="pills-times-tab">...</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="paneladmin-account-box paneladmin-billing">
+                                                    <div class="billing-sec content">
+                                                        <div class="demo">
+                                                            <div class="scrollbar-inner">
+                                                                <div class="account-title">
+                                                                    <h3>Facturació</h3>
+                                                                    <a href="#">Convertir a BTC</a>
+                                                                </div>
+                                                                <div class="operations-carried ">
+                                                                    <div class="multipal-tabs">
+                                                                        <ul class="nav nav-pills" id="pills-tab2" role="tablist">
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link active" id="pills-home2-tab" data-toggle="pill" href="#pills-home2" role="tab" aria-controls="pills-home2" aria-selected="true">TODAY</a>
+                                                                            </li>
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link" id="pills-profile3-tab" data-toggle="pill" href="#pills-profile3" role="tab" aria-controls="pills-profile3" aria-selected="false">WEEK</a>
+                                                                            </li>
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link" id="pills-contact4-tab" data-toggle="pill" href="#pills-contact4" role="tab" aria-controls="pills-contact4" aria-selected="false">MONTH</a>
+                                                                            </li>
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link" id="pills-times5-tab" data-toggle="pill" href="#pills-times5" role="tab" aria-controls="pills-times5" aria-selected="false">ALL TIME</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="tab-content" id="pills-tabContent2">
+                                                                        <div class="tab-pane fade show active" id="pills-home2" role="tabpanel" aria-labelledby="pills-home-tab">
+                                                                            <div class="account-billing">
+                                                                                <div class="account-billing-box">
+                                                                                    <h3>Herramientas Avandadas <span>$10</span></h3>
+                                                                                    <p>10/10/2018</p>
+                                                                                </div>
+                                                                                <div class="account-billing-box">
+                                                                                    <h3>Herramientas Avandadas <span>$10</span></h3>
+                                                                                    <p>10/10/2018</p>
+                                                                                </div>
+                                                                                <div class="account-billing-box">
+                                                                                    <h3>Herramientas Avandadas <span>$10</span></h3>
+                                                                                    <p>10/10/2018</p>
+                                                                                </div>
+                                                                                <div class="account-billing-box">
+                                                                                    <h3>Herramientas Avandadas <span>$10</span></h3>
+                                                                                    <p>10/10/2018</p>
+                                                                                </div>
+                                                                                <div class="account-billing-box">
+                                                                                    <h3>Herramientas Avandadas <span>$10</span></h3>
+                                                                                    <p>10/10/2018</p>
+                                                                                </div>
+                                                                                <div class="account-billing-box">
+                                                                                    <h3>Herramientas Avandadas <span>$10</span></h3>
+                                                                                    <p>10/10/2018</p>
+                                                                                </div>
+                                                                            </div> 
+                                                                        </div>
+                                                                        <div class="tab-pane fade" id="pills-profile3" role="tabpanel" aria-labelledby="pills-profile3-tab">...</div>
+                                                                        <div class="tab-pane fade" id="pills-contact4" role="tabpanel" aria-labelledby="pills-contact4-tab">...</div>
+                                                                        <div class="tab-pane fade" id="pills-times5" role="tabpanel" aria-labelledby="pills-times5-tab">...</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="referal-program">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h3 class="clearfix">Referal program </h3>
+                                        <div class="referal-program-inner">
+                                            <div class="multipal-tabs">
+                                                <ul class="nav nav-pills" id="pills-tab5" role="tablist">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" id="pills-referal1-tab" data-toggle="pill" href="#pills-referal1" role="tab" aria-controls="pills-referal1" aria-selected="true">TODAY</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="pills-referal2-tab" data-toggle="pill" href="#pills-referal2" role="tab" aria-controls="pills-referal2" aria-selected="false">WEEK</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="pills-referal3-tab" data-toggle="pill" href="#pills-referal3" role="tab" aria-controls="pills-referal3" aria-selected="false">MONTH</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="pills-referal4-tab" data-toggle="pill" href="#pills-referal4" role="tab" aria-controls="pills-times" aria-selected="false">ALL TIME</a>
+                                                    </li>
+                                                </ul>
+                                                <div class="dropdown">
+                                                    <p id="dropdownMenuLink"   data-toggle="dropdown"><span>Añadir link</span><a href="#" ><img src="img/plusicon.svg" alt=""></a></p>
+                                                    <div class="dropdown-menu saldo-dropdown" aria-labelledby="dropdownMenuLink">
+                                                        <h4>AÑADIR LINK</h4>
+                                                        <form>
+                                                            <div class="form-group">
+                                                                <label>ALIAS</label>
+                                                                <input type="text" class="form-control" placeholder="Facebook" />
+                                                                <input type="submit" class="btn-defult"  value="Generar link"/>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-content" id="pills-tabContent5">
+                                                <div class="tab-pane fade show active" id="pills-referal1" role="tabpanel" aria-labelledby="pills-referal1-tab">
+                                                    <div class="referal-program-inner-box">
+                                                        <div class="mobile-version">
+                                                            <div class="referal-mobile-owl owl-carousel owl-theme">
+                                                                <div class="item">
+                                                                    <div class="card">
+                                                                        <div class="card-header active">
+                                                                            <div class="socail-link">
+                                                                                Facebook
+                                                                                <a href="#">
+                                                                                    <img src="img/down-arrow.png" alt="" />
+                                                                                </a> 
+                                                                            </div>
+                                                                        </div> 
+                                                                        <div class="card-boday">
+                                                                            <div class="row">
+                                                                                <div class="col-12">
+                                                                                    <div class="socail-link">
+                                                                                        <a href="#">https://nummex.com/24342382fr40</a>
+                                                                                    </div>
+                                                                                    <div class="socail-click">
+                                                                                        <ul>
+                                                                                            <li>
+                                                                                                1245
+                                                                                                <span>Clicks</span>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                43
+                                                                                                <span>Conversiones</span>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                $ 78
+                                                                                                <span>Cominisiones</span>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="referal-program-graph">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                        <div class="referal-program-graph-box">
+                                                                                            <div class="text-box">
+                                                                                                <h4>CONVERSIONES</h4>
+                                                                                            </div>
+                                                                                            <div class="imnage-holder">
+                                                                                                <img class="img-fluid" src="img/click-graph-img2.png" alt="" />
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="item">
+                                                                    <div class="card">
+                                                                        <div class="card-header active">
+                                                                            <div class="socail-link">
+                                                                                Twitter
+                                                                                <a href="#">
+                                                                                    <img src="img/down-arrow.png" alt="" />
+                                                                                </a> 
+                                                                            </div>
+                                                                        </div> 
+                                                                        <div class="card-boday">
+                                                                            <div class="row">
+                                                                                <div class="col-12">
+                                                                                    <div class="socail-link">
+                                                                                        <a href="#">https://nummex.com/24342382fr40</a>
+                                                                                    </div>
+                                                                                    <div class="socail-click">
+                                                                                        <ul>
+                                                                                            <li>
+                                                                                                1245
+                                                                                                <span>Clicks</span>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                43
+                                                                                                <span>Conversiones</span>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                $ 78
+                                                                                                <span>Cominisiones</span>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="referal-program-graph">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                        <div class="referal-program-graph-box">
+                                                                                            <div class="text-box">
+                                                                                                <h4>CLICKS</h4>
+                                                                                            </div>
+                                                                                            <div class="imnage-holder">
+                                                                                                <img class="img-fluid" src="img/click-graph-img1.png" alt="" />
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="item">
+                                                                    <div class="card">
+                                                                        <div class="card-header active">
+                                                                            <div class="socail-link">
+                                                                                Mi blog
+                                                                                <a href="#">
+                                                                                    <img src="img/down-arrow.png" alt="" />
+                                                                                </a> 
+                                                                            </div>
+                                                                        </div> 
+                                                                        <div class="card-boday">
+                                                                            <div class="row">
+                                                                                <div class="col-12">
+                                                                                    <div class="socail-link">
+                                                                                        <a href="#">https://nummex.com/24342382fr40</a>
+                                                                                    </div>
+                                                                                    <div class="socail-click">
+                                                                                        <ul>
+                                                                                            <li>
+                                                                                                1245
+                                                                                                <span>Clicks</span>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                43
+                                                                                                <span>Conversiones</span>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                $ 78
+                                                                                                <span>Cominisiones</span>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="referal-program-graph">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                        <div class="referal-program-graph-box">
+                                                                                            <div class="text-box">
+                                                                                                <h4>GEODISTRIBUCIÓN</h4>
+                                                                                            </div>
+                                                                                            <div class="imnage-holder">
+                                                                                                <img class="img-fluid" src="img/click-graph-img3.png" alt="" />
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div> 
+                                                            </div>
+                                                        </div>
+                                                        <div class="dasktop-version">
+                                                            <div class="accordion" id="accordionExample">
+                                                                <div class="card">
+                                                                    <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne">
+                                                                        <div class="socail-link">
+                                                                            Facebook
+                                                                            <a href="#">https://nummex.com/24342382fr40</a>
+                                                                        </div>
+                                                                        <div class="socail-click">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    1245
+                                                                                    <span>Clicks</span>
+                                                                                </li>
+                                                                                <li>
+                                                                                    43
+                                                                                    <span>Conversiones</span>
+                                                                                </li>
+                                                                                <li>
+                                                                                    $ 78
+                                                                                    <span>Cominisiones</span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="comisiones-btn">
+                                                                            <a class="dropdown-slide" href="#">Ver comisiones</a>
+                                                                            <div class="comisiones-btn-dropdown">
+                                                                                <div class="content">
+                                                                                    <div class="demo">
+                                                                                        <div class="scrollbar-inner">
+                                                                                            <h3>COMISIONES</h3>
+                                                                                            <ul>
+                                                                                                <li>
+                                                                                                    <h4>Lorem ipsum <span>$10</span></h4>
+                                                                                                    <p>Abonada</p>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <h4>Lorem ipsum <span>$10</span></h4>
+                                                                                                    <p class="red-color">Pendiente pago</p>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <h4>Lorem ipsum <span>$10</span></h4>
+                                                                                                    <p>Abonada</p>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <h4>Lorem ipsum <span>$10</span></h4>
+                                                                                                    <p>Abonada</p>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <h4>Lorem ipsum <span>$10</span></h4>
+                                                                                                    <p>Abonada</p>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <h4>Lorem ipsum <span>$10</span></h4>
+                                                                                                    <p>Abonada</p>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <h4>Lorem ipsum <span>$10</span></h4>
+                                                                                                    <p>Abonada</p>
+                                                                                                </li>
+                                                                                            </ul> 
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="up-arrow">
+                                                                            <a href="#"><img src="img/down-arrow.png" alt="" /></a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                                                        <div class="card-body">
+                                                                            <div class="referal-program-graph">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <div class="referal-program-graph-box">
+                                                                                            <div class="text-box">
+                                                                                                <h4>CLICKS</h4>
+                                                                                            </div>
+                                                                                            <div class="imnage-holder">
+                                                                                                <img class="img-fluid" src="img/click-graph-img1.png" alt="" />
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-md-4">
+                                                                                        <div class="referal-program-graph-box">
+                                                                                            <div class="text-box">
+                                                                                                <h4>CONVERSIONES</h4>
+                                                                                            </div>
+                                                                                            <div class="imnage-holder">
+                                                                                                <img class="img-fluid" src="img/click-graph-img2.png" alt="" />
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-md-4">
+                                                                                        <div class="referal-program-graph-box">
+                                                                                            <div class="text-box">
+                                                                                                <h4>GEODISTRIBUCIÓN</h4>
+                                                                                            </div>
+                                                                                            <div class="imnage-holder">
+                                                                                                <img class="img-fluid" src="img/click-graph-img3.png" alt="" />
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card">
+                                                                    <div class="card-header" id="headingTwo"  data-toggle="collapse" data-target="#collapseTwo">
+                                                                        <div class="socail-link">
+                                                                            Twitter
+                                                                            <a href="#">https://nummex.com/24342382fr40</a>
+                                                                        </div>
+                                                                        <div class="socail-click">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    1245
+                                                                                    <span>Clicks</span>
+                                                                                </li>
+                                                                                <li>
+                                                                                    43
+                                                                                    <span>Conversiones</span>
+                                                                                </li>
+                                                                                <li>
+                                                                                    $ 78
+                                                                                    <span>Cominisiones</span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="comisiones-btn">
+                                                                            <a class="dropdown-slide" href="#">Ver comisiones</a>
+                                                                            <div class="comisiones-btn-dropdown">
+                                                                                <div class="content">
+                                                                                    <div class="demo">
+                                                                                        <div class="scrollbar-inner">
+                                                                                            <h3>COMISIONES</h3>
+                                                                                            <ul>
+                                                                                                <li>
+                                                                                                    <h4>Lorem ipsum <span>$10</span></h4>
+                                                                                                    <p>Abonada</p>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <h4>Lorem ipsum <span>$10</span></h4>
+                                                                                                    <p class="red-color">Pendiente pago</p>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <h4>Lorem ipsum <span>$10</span></h4>
+                                                                                                    <p>Abonada</p>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <h4>Lorem ipsum <span>$10</span></h4>
+                                                                                                    <p>Abonada</p>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <h4>Lorem ipsum <span>$10</span></h4>
+                                                                                                    <p>Abonada</p>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <h4>Lorem ipsum <span>$10</span></h4>
+                                                                                                    <p>Abonada</p>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <h4>Lorem ipsum <span>$10</span></h4>
+                                                                                                    <p>Abonada</p>
+                                                                                                </li>
+                                                                                            </ul> 
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="up-arrow">
+                                                                            <a href="#"><img src="img/down-arrow.png" alt="" /></a>
+                                                                        </div> 
+                                                                    </div>
+                                                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                                                        <div class="card-body">
+                                                                            <div class="referal-program-graph">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <div class="referal-program-graph-box">
+                                                                                            <div class="text-box">
+                                                                                                <h4>CLICKS</h4>
+                                                                                            </div>
+                                                                                            <div class="imnage-holder">
+                                                                                                <img class="img-fluid" src="img/click-graph-img1.png" alt="" />
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-md-4">
+                                                                                        <div class="referal-program-graph-box">
+                                                                                            <div class="text-box">
+                                                                                                <h4>CONVERSIONES</h4>
+                                                                                            </div>
+                                                                                            <div class="imnage-holder">
+                                                                                                <img class="img-fluid" src="img/click-graph-img2.png" alt="" />
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-md-4">
+                                                                                        <div class="referal-program-graph-box">
+                                                                                            <div class="text-box">
+                                                                                                <h4>GEODISTRIBUCIÓN</h4>
+                                                                                            </div>
+                                                                                            <div class="imnage-holder">
+                                                                                                <img class="img-fluid" src="img/click-graph-img3.png" alt="" />
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card">
+                                                                    <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree">
+                                                                        <div class="socail-link">
+                                                                            Mi blog
+                                                                            <a href="#">https://nummex.com/24342382fr40</a>
+                                                                        </div>
+                                                                        <div class="socail-click">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    1245
+                                                                                    <span>Clicks</span>
+                                                                                </li>
+                                                                                <li>
+                                                                                    43
+                                                                                    <span>Conversiones</span>
+                                                                                </li>
+                                                                                <li>
+                                                                                    $ 78
+                                                                                    <span>Cominisiones</span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="comisiones-btn">
+                                                                            <a class="dropdown-slide" href="#">Ver comisiones</a>
+                                                                            <div class="comisiones-btn-dropdown">
+                                                                                <div class="content">
+                                                                                    <div class="demo">
+                                                                                        <div class="scrollbar-inner">
+                                                                                            <h3>COMISIONES</h3>
+                                                                                            <ul>
+                                                                                                <li>
+                                                                                                    <h4>Lorem ipsum <span>$10</span></h4>
+                                                                                                    <p>Abonada</p>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <h4>Lorem ipsum <span>$10</span></h4>
+                                                                                                    <p class="red-color">Pendiente pago</p>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <h4>Lorem ipsum <span>$10</span></h4>
+                                                                                                    <p>Abonada</p>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <h4>Lorem ipsum <span>$10</span></h4>
+                                                                                                    <p>Abonada</p>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <h4>Lorem ipsum <span>$10</span></h4>
+                                                                                                    <p>Abonada</p>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <h4>Lorem ipsum <span>$10</span></h4>
+                                                                                                    <p>Abonada</p>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <h4>Lorem ipsum <span>$10</span></h4>
+                                                                                                    <p>Abonada</p>
+                                                                                                </li>
+                                                                                            </ul> 
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="up-arrow">
+                                                                            <a href="#"><img src="img/down-arrow.png" alt="" /></a>
+                                                                        </div> 
+                                                                    </div>
+                                                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                                                        <div class="card-body">
+                                                                            <div class="referal-program-graph">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <div class="referal-program-graph-box">
+                                                                                            <div class="text-box">
+                                                                                                <h4>CLICKS</h4>
+                                                                                            </div>
+                                                                                            <div class="imnage-holder">
+                                                                                                <img class="img-fluid" src="img/click-graph-img1.png" alt="" />
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-md-4">
+                                                                                        <div class="referal-program-graph-box">
+                                                                                            <div class="text-box">
+                                                                                                <h4>CONVERSIONES</h4>
+                                                                                            </div>
+                                                                                            <div class="imnage-holder">
+                                                                                                <img class="img-fluid" src="img/click-graph-img2.png" alt="" />
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-md-4">
+                                                                                        <div class="referal-program-graph-box">
+                                                                                            <div class="text-box">
+                                                                                                <h4>GEODISTRIBUCIÓN</h4>
+                                                                                            </div>
+                                                                                            <div class="imnage-holder">
+                                                                                                <img class="img-fluid" src="img/click-graph-img3.png" alt="" />
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>    
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="pills-referal2" role="tabpanel" aria-labelledby="pills-referal2-tab">...</div>
+                                                <div class="tab-pane fade" id="pills-referal3" role="tabpanel" aria-labelledby="pills-referal3-tab">...</div>
+                                                <div class="tab-pane fade" id="pills-referal4" role="tabpanel" aria-labelledby="pills-referal4-tab">...</div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-4 col-md-4 order-lg-1 order-md-1 order-sm-4 order-4">
+                            <div class="footer-inner footer-first">
+                                <div class="footer-logo">
+                                    <a href="#"><img src="img/logo-footer.svg" alt="" /></a>
+                                </div>
+                                <p>Nummex © 2018. All rights reserved.</p>
+                                <div class="footer-socail">
+                                    <ul class="clearfix">
+                                        <li><a href="#"><img src="img/facebook-icon.svg" alt="" /></a></li>
+                                        <li><a href="#"><img src="img/twitter-icon.svg" alt="" /></a></li>
+                                        <li><a href="#"><img src="img/google-pluse-icon.svg" alt="" /></a></li>
+                                        <li><a href="#"><img src="img/vimo-icon.svg" alt="" /></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-3 order-lg-2 order-md-2 order-sm-1 order-1">
+                            <div class="footer-inner footer-second">
+                                <h3 class="dasktop-version">
+                                    <img class="company-img" src="img/company-icon.svg" alt="" />
+                                    OUR COMPANY 
+                                </h3>
+                                <h3 class="mobile-version" id="title1">
+                                    <img class="company-img" src="img/company-icon.svg" alt="" />
+                                    <a href="#">OUR COMPANY <img class="arrow-down" src="img/down-arrow.png" alt="" /></a>
+                                </h3>
+                                <div id="footer-links1" class="footer-links">
+                                    <ul>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Política de Privacidad</a></li>
+                                        <li><a href="#">Términos y Condiciones</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-2 order-lg-3 order-md-3 order-sm-2 order-2">
+                            <div class="footer-inner">
+                                <h3 class="dasktop-version">
+                                    <img class="company-img" src="img/developer-icon.svg" alt="" />
+                                    DEVELOPERS  
+                                </h3>
+                                <h3 class="mobile-version" id="title2">
+                                    <img class="company-img" src="img/developer-icon.svg" alt="" />
+                                    <a href="#"> DEVELOPERS <img class="arrow-down" src="img/down-arrow.png" alt="" /></a>
+                                </h3>
+                                <div id="footer-links2" class="footer-links">
+                                    <ul>
+                                        <li><a href="#">API</a></li> 
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-3 order-lg-4 order-md-4 order-sm-3 order-3">
+                            <div class="footer-inner">
+                                <h3 class="dasktop-version">
+                                    <img class="company-img" src="img/get-in-touch-icon.svg" alt="" />
+                                    GET IN TOUCH 
+                                </h3>
+                                <h3 class="mobile-version" id="title3">
+                                    <img class="company-img" src="img/get-in-touch-icon.svg" alt="" />
+                                    <a href="#">GET IN TOUCH <img class="arrow-down" src="img/down-arrow.png" alt="" /></a>
+                                </h3>
+                                <div id="footer-links3" class="footer-links">
+                                    <ul>
+                                        <li><a href="#">Support</a></li> 
+                                        <li><a href="#">Contact us</a></li> 
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="right-menu">
+                <div class="right-menu-nav">
+                    <ul>
+                        <li class="active"><a href="#">Social Network</a></li>
+                        <li><a href="#">Trading</a></li>
+                        <li><a href="#">Copy trading</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="login-right">
+                    <ul>
+                        <li><a id="gear-menu" href="#"><img src="img/gear-icon.svg" alt="" /></a></li>
+                        <li><a id="fbaez-menu" href="#">Fbaez <img class="menu-right-icon" src="img/menu-right-icon.svg" alt="" /></a></li> 
+                    </ul> 
+                </div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+        <div class="order-book-modal  trading-graph-modal edit-personal-information">
+            <div class="modal fade" id="exampleModal">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true"><img src="img/cross-icon-black.svg" alt="" /></span>
+                            </button>
+                            <div class="login-modal-top">
+                                <div class="logo">
+                                    <img src="img/logo2.svg" alt="" />
+                                </div>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true"><img src="img/cross-icon.svg" alt="" /></span>
+                                </button> 
+                            </div>
+                            <div class="edit-personal-information-inner">
+                                <h3>Edita tus datos personales</h3>
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>NOMBRE DE USUARIO</label>
+                                                <input type="text" class="from-control" placeholder="Fbaezb" />
+                                                <span><img src="img/pencil-icon.png" alt="" /></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6"> </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>CONTRASEÑ ACTUAL</label>
+                                                <input type="text" class="from-control" placeholder="· · · · · · · · · ·" /> 
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>NUEVA CONTRASEÑA</label>
+                                                <input type="text" class="from-control" placeholder="" /> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>MAIL</label>
+                                                <input type="text" class="from-control" placeholder="fernando@gmail.com" /> 
+                                                <span><img src="img/pencil-icon.png" alt="" /></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>TELEGRAM</label>
+                                                <input type="text" class="from-control" placeholder="fbaezb" /> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="anadir-dropdown-box">
+                                                <h3>API’s</h3>
+                                                <ul class="clearfix">
+                                                    <li>
+                                                        <a href="#">
+                                                            <img class="captura-img" src="img/captura-img1.png" alt="">
+                                                            <span>
+                                                                <img src="img/checkmark-icon.svg" alt="">
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="text-center">
+                                                        <a href="#">
+                                                            <img class="captura-img" src="img/captura-img2.png" alt="">
+                                                            <span>
+                                                                <img src="img/checkmark-icon.svg" alt="">
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="text-right">
+                                                        <a href="#">
+                                                            <img class="captura-img" src="img/captura-img3.png" alt="">
+                                                            <span>
+                                                                <img src="img/checkmark-icon.svg" alt="">
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <img class="captura-img" src="img/captura-img1.png" alt="">
+                                                            <span>
+                                                                <img src="img/checkmark-icon.svg" alt="">
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="text-center">
+                                                        <a href="#">
+                                                            <img class="captura-img" src="img/captura-img2.png" alt="">
+                                                            <span>
+                                                                <img src="img/checkmark-icon.svg" alt="">
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="text-right">
+                                                        <a href="#">
+                                                            <img class="captura-img" src="img/captura-img3.png" alt="">
+                                                            <span>
+                                                                <img src="img/checkmark-icon.svg" alt="">
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row"> 
+                                        <div class="col-md-12">
+                                            <div class="form-group text-right"> 
+                                                <a href="#">
+                                                    Guardar
+                                                    <img src="img/arrow-thin-right.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order-book-modal trading-graph-modal become-pro-modal">
+            <div class="modal fade" id="exampleModal2">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true"><img src="img/cross-icon-black.svg" alt="" /></span>
+                            </button> 
+                            <div class="login-modal-top">
+                                <div class="logo">
+                                    <img src="img/logo2.svg" alt="" />
+                                </div>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true"><img src="img/cross-icon.svg" alt="" /></span>
+                                </button> 
+                            </div>
+                            <div class="become-pro-inner">
+                                <div class="become-pro-hedding">
+                                    <h3>Hazte PRO</h3>
+                                    <p>Actualmente, tienes el plan Advanced hasta el 18/10/2018
+                                        ¿Quieres actualizar a un plan mejor?</p>
+                                </div>
+                                <div class="row"> 
+                                    <div class="col-md-12">
+                                        <div class="pricing-box">
+                                            <p>FREE</p>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <h4><small>$</small> 0 <span>/M</span></h4>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <ul>
+                                                        <li>Poner tus propias API's</li>
+                                                        <li>Ver tu portafolio</li>
+                                                        <li>Publicar en Social Network</li>
+                                                        <li  class="cross-red">Hacer trading con herramientas avanzadas</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div> 
+                                    <div class="col-md-12">
+                                        <div class="pricing-box">
+                                            <p>FULL VERSION</p>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <h4><small>$</small>10 <span>/M</span></h4>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <ul>
+                                                        <li>Poner tus propias API's</li>
+                                                        <li>Ver tu portafolio</li>
+                                                        <li>Publicar en Social Network</li>
+                                                        <li class="cross-red">Hacer trading con herramientas avanzadas</li>
+                                                    </ul>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="pricing-box">
+                                            <p>FREE</p>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <h4><small>$</small> 15 <span>/M</span></h4>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <ul>
+                                                        <li>Poner tus propias API's</li>
+                                                        <li>Ver tu portafolio</li>
+                                                        <li>Publicar en Social Network</li>
+                                                        <li class="cross-red">Hacer trading con herramientas avanzadas</li>
+                                                    </ul>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="upgrade-btn text-right">
+                                    <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#exampleModal3">
+                                        Upgrade
+                                        <img src="img/arrow-thin-right.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order-book-modal payment-modal">
+            <div class="modal fade" id="exampleModal3">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true"><img src="img/cross-icon-black.svg" alt="" /></span>
+                            </button> 
+                            <div class="login-modal-top">
+                                <div class="logo">
+                                    <img src="img/logo2.svg" alt="" />
+                                </div>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true"><img src="img/cross-icon.svg" alt="" /></span>
+                                </button> 
+                            </div>
+                            <div class="become-pro-inner">
+                                <div class="become-pro-hedding">
+                                    <h3>Pago</h3>
+                                    <p>Elige el método de pago que más cómodo sea para ti.</p>
+                                </div>
+                                <div class="payment-method">
+                                    <ul class="nav nav-pills" id="pills-tab3" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="pills-Bitcoin-tab" data-toggle="pill" href="#pills-Bitcoin" role="tab" aria-controls="pills-Bitcoin" aria-selected="true">Bitcoin</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="pills-Crédito-tab" data-toggle="pill" href="#pills-Crédito" role="tab" aria-controls="pills-Crédito" aria-selected="false">Tarjeta Crédito</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="pills-Transferencia-tab" data-toggle="pill" href="#pills-Transferencia" role="tab" aria-controls="pills-Transferencia" aria-selected="false">Transferencia</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="pills-Alipay-tab" data-toggle="pill" href="#pills-Alipay" role="tab" aria-controls="pills-Alipay" aria-selected="false">Alipay</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="pills-tabContent3">
+                                        <div class="tab-pane fade show active" id="pills-Bitcoin" role="tabpanel" aria-labelledby="pills-Bitcoin-tab">
+                                            <div class="payment-method-inner edit-personal-information-inner">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>TITULAR DE LA TARJETA</label>
+                                                                <input type="text" class="from-control" placeholder="Introduce el titular de la tarjeta" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>NÚMERO DE LA TARJETA</label>
+                                                                <input type="text" class="from-control" placeholder="Introduce el número de la tarjeta" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>CVV</label>
+                                                                <input type="text" class="from-control" placeholder="Introduce el CVV" /> 
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>FECHA DE CADUCIDAD</label>
+                                                                <input type="text" class="from-control" placeholder="Seleccionar fecha de caducidad" /> 
+                                                                <span>
+                                                                    <img src="img/calendar-icon.svg" alt="">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="upgrade-btn text-right">
+                                                        <a href="#">
+                                                            Pagar
+                                                            <img src="img/arrow-thin-right.svg" alt="">
+                                                        </a>
+                                                    </div>
+                                                </form>
+                                            </div> 
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-Crédito" role="tabpanel" aria-labelledby="pills-Crédito-tab">...</div>
+                                        <div class="tab-pane fade" id="pills-Transferencia" role="tabpanel" aria-labelledby="pills-Transferencia-tab">...</div>
+                                        <div class="tab-pane fade" id="pills-Alipay" role="tabpanel" aria-labelledby="pills-Alipay-tab">...</div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Configuration-setting">
+            <div class="Configuration-setting-inner">
+                <div class="content">
+                    <div class="demo">
+                        <div class="scrollbar-inner">
+                            <div class="visualizattion">
+                                <h4>Configuración</h4>
+                                <h3>VISUALIZATION</h3>
+                                <div class="visualizattion-box">
+                                    <p>Dark Mode</p>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>  
+                            </div>  
+                            <div class="language">
+                                <h3>LANGUAGE</h3>
+                                <form action="#">
+                                    <input type="text" class="form-control" placeholder="Buscar …" />
+                                    <ul class="buy-alarm">
+                                        <li>
+                                            <input type="radio" id="testtow" name="radio-group" checked>
+                                            <label for="testtow">English</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="testthree" name="radio-group">
+                                            <label for="testthree">Spanish</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="testfour" name="radio-group">
+                                            <label for="testfour">French</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="testfive" name="radio-group">
+                                            <label for="testfive">United State</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="testsix" name="radio-group">
+                                            <label for="testsix">Japanese</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="testseven" name="radio-group">
+                                            <label for="testseven">Spanish</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="testeight" name="radio-group">
+                                            <label for="testeight">Urdu</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="testnin" name="radio-group" checked>
+                                            <label for="testnin">English</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="testten" name="radio-group" checked>
+                                            <label for="testten">English</label>
+                                        </li>
+                                    </ul> 
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fbaez-sidebar">
+            <div class="fbaez-back">
+                <a  id="fbaez-back" href="#"><img src="img/menu-right-icon.svg" alt="" /> Volver</a>
+            </div>
+            <div class="text-box">
+                <ul>
+                    <li><a href="#"> <img src="img/document-white-icon.png" alt="" />Editar datos personales</a></li>
+                    <li><a href="#"><img src="img/view-thumb-white-icon.png" alt="" />Panel Administrador</a></li>
+                    <li><a href="#"><img src="img/gear-white-icon.png" alt="" />Configuración personal</a></li>
+                    <li><a href="#"><img src="img/graph-bar-white-icon.png" alt="" />Portfolio</a></li>
+                    <li><a href="#"><img src="img/jewel-white-icon.png" alt="" />Hacerte PRO</a></li> 
+                </ul>
+            </div>
+            <div class="text-inner">
+                <a id="skip-sidbar" href="#"><img src="img/skip-white-icon.png" alt="" />Cerrar Sesión</a>
+            </div>
+        </div>
+
+        <!-- jQuery -->
+        <script src="js/jquery-3.2.1.slim.min.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>            
+        <script src="js/owl.carousel.min.js"></script>            
+        <script src="js/jquery.scrollbar.js"></script>            
+        <script src="js/custom.js"></script>
+    </body>
+</html>
