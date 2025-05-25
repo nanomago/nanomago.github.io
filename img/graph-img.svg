@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 695 240">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1 {
+        stroke: #979797;
+        stroke-linecap: square;
+        stroke-dasharray: 4;
+      }
+
+      .cls-2 {
+        stroke: #707070;
+        stroke-width: 4px;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #3a66f8;
+      }
+
+      .cls-5 {
+        fill: #24d4e3;
+      }
+
+      .cls-6 {
+        filter: url(#Oval_4-4);
+      }
+
+      .cls-7 {
+        filter: url(#Oval_4-3);
+      }
+
+      .cls-8 {
+        filter: url(#Oval_4-2);
+      }
+
+      .cls-9 {
+        filter: url(#Oval_4);
+      }
+    </style>
+    <filter id="Oval_4" x="167" y="119" width="67" height="67" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Oval_4-2" x="228" y="49" width="67" height="67" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur-2"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Oval_4-3" x="279" y="0" width="67" height="67" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur-3"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Oval_4-4" x="206" y="173" width="67" height="67" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur-4"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1" data-name="Group 1" transform="translate(-289 -1694)">
+    <path id="Line" class="cls-1" d="M1,.5H692" transform="translate(291 1726)"/>
+    <path id="LIKES_GRAPH" class="cls-2" d="M0,140.354c72.32,0,36.012-111.893,77.649-111.893s45.2,47.378,83.135,32.908C204.726,44.609,198.931,194,228.14,194S247.606,1.789,288.585,1.789c60.316,0,65.624,92.27,110.713,69.8,52.1-25.96,47.793,62.179,70.978,68.763,27.556,7.825,29.539-120.023,69.167-138.565,22.906-10.718,44.288,29.494,78.981,47.191S680.574,16.2,695,16.2" transform="translate(289 1720)"/>
+    <path id="Line_Copy" data-name="Line Copy" class="cls-1" d="M1,.5H692" transform="translate(291 1905)"/>
+    <g class="cls-9" transform="matrix(1, 0, 0, 1, 289, 1694)">
+      <circle id="Oval_4-5" data-name="Oval 4" class="cls-3" cx="12.5" cy="12.5" r="12.5" transform="translate(188 140)"/>
+    </g>
+    <circle id="Oval_4-6" data-name="Oval 4" class="cls-4" cx="5" cy="5" r="5" transform="translate(485 1842)"/>
+    <g class="cls-8" transform="matrix(1, 0, 0, 1, 289, 1694)">
+      <circle id="Oval_4-7" data-name="Oval 4" class="cls-3" cx="12.5" cy="12.5" r="12.5" transform="translate(249 70)"/>
+    </g>
+    <circle id="Oval_4-8" data-name="Oval 4" class="cls-5" cx="5" cy="5" r="5" transform="translate(546 1772)"/>
+    <g class="cls-7" transform="matrix(1, 0, 0, 1, 289, 1694)">
+      <circle id="Oval_4-9" data-name="Oval 4" class="cls-3" cx="12.5" cy="12.5" r="12.5" transform="translate(300 21)"/>
+    </g>
+    <circle id="Oval_4-10" data-name="Oval 4" class="cls-5" cx="5" cy="5" r="5" transform="translate(597 1723)"/>
+    <g class="cls-6" transform="matrix(1, 0, 0, 1, 289, 1694)">
+      <circle id="Oval_4-11" data-name="Oval 4" class="cls-3" cx="12.5" cy="12.5" r="12.5" transform="translate(227 194)"/>
+    </g>
+    <circle id="Oval_4-12" data-name="Oval 4" class="cls-4" cx="5" cy="5" r="5" transform="translate(524 1896)"/>
+  </g>
+</svg>

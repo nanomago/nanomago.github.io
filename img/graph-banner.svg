@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2723 1110">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        stroke: #fff;
+        stroke-linecap: square;
+        opacity: 0.07;
+      }
+
+      .cls-3, .cls-6 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        fill: #fff;
+        opacity: 0.05;
+      }
+
+      .cls-5 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-6 {
+        fill: rgba(35,211,227,0.2);
+        stroke: #23d3e3;
+      }
+    </style>
+    <clipPath id="clip-path"/>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_3" data-name="Rectangle 3" class="cls-1" width="1338" height="189"/>
+    </clipPath>
+  </defs>
+  <g id="Group" class="cls-2" transform="translate(777 54)">
+    <path id="Line_3" data-name="Line 3" class="cls-3" d="M1.5.5v601" transform="translate(238 -1)"/>
+    <path id="Line_3-2" data-name="Line 3" class="cls-3" d="M1.5.5v601" transform="translate(946 -1)"/>
+    <circle id="Oval_Copy" data-name="Oval Copy" class="cls-4" cx="500" cy="500" r="500" transform="translate(946 -54)"/>
+    <circle id="Oval_Copy_3" data-name="Oval Copy 3" class="cls-4" cx="500" cy="500" r="500" transform="translate(-777 56)"/>
+    <g id="Group_2" data-name="Group 2" transform="translate(-14 414)">
+      <rect id="Rectangle_3-2" data-name="Rectangle 3" class="cls-1" width="1338" height="189"/>
+      <g id="Group_2-2" data-name="Group 2" class="cls-5">
+        <path id="Path_2" data-name="Path 2" class="cls-6" d="M-20.748,133.23s-47.138,6.836-87.533,1.892-35.355-7.664-51.238-18.719-47.986,10.918-82.492,9.862c-48.5-1.485-59.562-12.075-123.376-47.55s-87.284-19.812-134,3.731-40.168,7.618-93.008,8.978-87.7,70.436-169.871,72.887S-848.406.99-901.9.011-944.14,65.652-982.667,66.9s-21.233,90.253-104.081,93.553-88.321-99.853-150.7-101.736-87.079,136.316-161.678,81.562-86.01,7.247-96.849,7.976-26.027.284-26.027.284V177H0V138.578l-15.453-3.836Z" transform="translate(1490 12)"/>
+      </g>
+    </g>
+  </g>
+</svg>
