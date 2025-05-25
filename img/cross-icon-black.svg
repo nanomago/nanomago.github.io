@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #333;
+      }
+    </style>
+  </defs>
+  <path id="cross" class="cls-1" d="M7.8,6.818a.692.692,0,0,1-.979.979L4,4.979,1.182,7.8A.692.692,0,0,1,.2,6.818L3.021,4,.2,1.182A.692.692,0,1,1,1.182.2L4,3.021,6.818.2a.692.692,0,1,1,.979.979L4.979,4Z" transform="translate(0 8) rotate(-90)"/>
+</svg>
