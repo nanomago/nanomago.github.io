@@ -1,0 +1,1317 @@
+@media screen and (-webkit-min-device-pixel-ratio:0) {}
+@media (min-width: 1600px) {
+    .banner-inner {
+        background-size: 2180px auto;
+        padding-bottom: 300px;
+    }
+}
+@media (max-width: 1199px) {
+    .header-inner .navbar-nav .nav-item {
+        margin: 0 15px;
+    }
+    .banner-inner{
+        background-size: 115%;
+    }
+    .news-info-filter .trading-copy-top .trading-copy-top-left .form-control {
+        margin-right: 5px;
+        width: 190px;
+    }
+    .paneladmin-page .trading-banner a {
+        margin-left: 5px;
+        max-width: 170px;
+        min-width: 170px;
+    }
+    .multipal-tabs .nav-pills .nav-item {
+        margin-right: 10px;
+    }
+    .portfolio-quantity .text-box {
+        padding: 106px 0 0 30px; 
+    }
+    .socail-authors-box .text-box {
+        padding-left: 5px;
+    }
+    .socail-authors-box .text-box ul li {
+        margin-right: 5px;
+    }
+    .trading-graph-head {
+        padding: 20px 15px;
+    }
+    .trading-buy li:last-child {
+        margin-left: 10px;
+    }
+    .trading-depth a {
+        margin: 0 3px;
+        font-size: 12px;
+    }
+    .trading-bitcoin ul li{
+        padding-right: 2px;
+    }
+    .trading-buy ul li a.buy-sell {
+        font-size: 12px;
+        width: 77px;
+    }
+    .trading-copy-detail table tbody tr td{
+        padding: 30px 20px 25px;
+    }
+    .trading-copy-detail table thead tr th {
+        padding: 30px 20px;
+    }
+}
+@media (max-width: 991px)  {
+    .alert p {
+        line-height: 20px;
+        padding-right: 20px;
+    }
+    .container{
+        max-width: 100%;
+    }
+    .header{
+        padding: 23px 15px;
+    }
+    .login-right {
+        max-width: 130px;
+        text-align: center;
+    }
+    .header-inner .login-right ul li {
+        display: inline-block;
+        position: relative;
+    }
+    .header-inner .login-right ul li:last-child {
+        margin-left: 0;
+        margin-top: 34px;
+        width: 100%;
+    }
+    .header-inner .login-right ul {
+        align-items: center;
+        display: block;
+    }
+    .header-inner {
+        align-items: end;
+        display: flex;
+        flex-direction: column;
+    }
+    .header-inner .header-logo {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .header-second .header-inner .login-right ul li:first-child {
+        margin-right: 16px;
+    }
+    .header-second .header-inner .login-right ul li {
+        margin-left: 5px;
+    }
+    .header-second .header-inner .login-right ul li:first-child::after {
+        right: -15px;
+    }
+    .login-right {
+        margin: -24px 0 0;
+    }
+    .header-nave .navbar-nav {
+        margin: 25px 0 0;
+    }
+    .header-inner .navbar-nav .nav-item:first-child{
+        margin-left: 0;
+    }
+    .banner-sec {
+        padding: 280px 0 0;
+    }
+    .banner-sec .text-box {
+        padding-bottom: 160px;
+    }
+    .betters-tools-sec {
+        padding: 90px 0 70px;
+    }
+    .betters-tools-box h3 {
+        margin-bottom: 25px;
+        margin-top: 18px;
+    }
+    .including-tools {
+        margin: 65px 0 0;
+    }
+    .trading-work-sec {
+        padding: 90px 15px 150px;
+    }
+    .trading-work-inner .nav-tabs--vertical {
+        max-width: 188px;
+    }
+    .footer {
+        padding: 60px 15px 76px;
+    }
+    .including-tools img{
+        width: 100%;
+    }
+    .secure-control-box {
+        flex-direction: column;
+    }
+    .secure-control-box .image-holder img{
+        width: auto !important;
+    }
+    .secure-control-box .image-holder {
+        margin: 0;
+    }
+    .secure-control-box .text-box {
+        padding-left: 0;
+        padding-top: 13px;
+    }
+    .secure-control-sec {
+        padding: 36px 20px;
+    }
+    .banner-inner {
+        background-size: 1320px auto;
+    }
+    .news-info-filter .trading-copy-top .trading-copy-top-left .form-control {
+        width: 160px;
+    }
+    .paneladmin-page .trading-banner a {
+        max-width: 150px;
+        min-width: 150px;
+    }
+    .paneladmin-page .trading-banner a img {
+        height: 13px;
+        margin-left: 25px;
+        max-width: 16px;
+    }
+    .paneladmin-page .trading-banner a.editar-mis img {
+        margin-left: 10px;
+    }
+    .paneladmin-sec {
+        padding: 50px 0;
+    }
+    .paneladmin-account{
+        padding-bottom: 30px;
+    }
+    .referal-program {
+        padding-top: 50px;
+    }
+    .referal-program h3 {
+        margin-bottom: 30px;
+    }
+    .paneladmin-account-box{
+        margin-bottom: 15px; 
+        padding: 30px 20px;
+    }
+    .referal-program-inner-box .card-header {
+        padding: 24px 16px;
+    }
+    .referal-program-inner-box .socail-link{
+        max-width: 230px;
+    }
+    .portfolio-quantity .text-box::after{
+        right: 74px;
+    }
+    .pricing-box ul {
+        padding: 55px 15px 40px;
+        text-align: left;
+    }
+    .pricing-box{
+        margin-bottom: 20px;
+        min-height: auto;
+    }
+    .pricing-page {
+        margin-top: 25px;
+        padding-bottom: 30px;
+    }
+    .socail-authors-box {
+        flex-direction: column;
+        text-align: center;
+    }
+    .trading-banner .form-control {
+        margin-right: 20px;
+        width: 227px;
+    }
+    .trading-depth,
+    .trading-buy{
+        display: none;
+    }
+    .trading-dots{
+        display: block;
+    }
+    .trading-copy-top .trading-copy-top-left .form-control {
+        margin-right: 5px;
+        width: 260px;
+    }
+    .anadir-dropdown-box{
+        right: 0;
+    }
+    .login-right ul li.setting .dropdown-menu {
+        left: auto !important;
+        right: -70px;
+        transform: translate(0px, 0px) !important;
+    }
+    .login-right ul li.dropdown .dropdown-menu{
+        left: auto !important;
+        right: 0;
+        transform: translate(0px, 0px) !important;
+    }
+    .login-modal-left {
+        padding: 66px 60px 33px;
+    }
+    .edit-personal-information-inner .anadir-dropdown-box ul li a {
+        max-width: 100%;
+        min-width: 100%;
+        width: 100%;
+    }
+    .edit-personal-information-inner .anadir-dropdown-box ul li {
+        margin: 0 0 20px;
+        padding: 0 10px;
+    }
+    .buy-sell-sort {
+        padding: 15px 15px;
+    }
+    .buy-sell-sort-right a img {
+        margin-left: 40px;
+    }
+    .buy-sell-sort-right a{
+        width: 155px;
+        margin-left: 10px;
+    }
+    .including-tools .image-holder {
+        max-width: 500px;
+    }
+    .including-tools .image-holder p {
+        right: -75px;
+        top: 13px;
+    }
+    .including-tools .image-holder span{
+        right: -75px;
+        bottom: 15px;
+    }
+    .including-tools .image-holder .image-inner ul li:first-child {
+        bottom: 60px;
+        left: 55px;
+    }
+    .including-tools .image-holder .image-inner ul li a{
+        font-size: 7px;
+    }
+    .including-tools .image-holder .image-inner ul li:nth-child(2) {
+        left: 205px;
+        bottom: 20px;
+    }
+    .including-tools .image-holder .image-inner ul li:nth-child(3) {
+        left: 100px;
+        top: 50px;
+    }
+    .including-tools .image-holder .image-inner ul li:nth-child(4) {
+        left: 260px;
+        top: 11px;
+    }
+}
+@media (max-width: 767px)  {
+    .header-inner .header-logo {
+        margin: 0;
+        padding: 0;
+    }
+    .navbar-nav{
+        display: none;
+    }
+    .login-right .menu-icon {
+        display: block;
+        margin-left: 25px;
+    }
+    .header-inner .login-right ul li.registrate-btn a {
+        height: 36px;
+        line-height: 33px;
+        width: 100px;
+    }
+    .header-inner .login-right ul li:first-child,
+    .header-inner .login-right ul li:nth-child(2){
+        display: none;
+    }
+    .header-inner {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-nave { 
+        width: auto;
+    }
+    .header-second .header-inner .login-right ul li:last-child {
+        display: flex;
+        align-items: center;
+    }
+    .login-right {
+        margin: 0;
+        max-width: inherit;
+        align-items: center;
+        display: flex;
+    }
+    .header-inner .login-right ul li:last-child{
+        margin: 0;
+    }
+    .header {
+        padding: 15px 5px;
+    }
+
+    .banner-sec {
+        padding: 118px 0 0;
+    }
+    .banner-sec .text-box h1{
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .banner-sec .text-box {
+        padding-bottom: 0;
+    }
+    .banner-sec .text-box p {
+        color: rgba(255, 255, 255, 0.7);
+        margin: 0 auto 40px;
+        max-width: 250px;
+    }
+    .proffesionals-trading-sec {
+        padding: 42px 0;
+    }
+    .footer {
+        padding: 36px 5px 16px;
+    }
+    .secure-control-box .image-holder {
+        display: none;
+    }
+    .secure-control-box {
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        text-align: center;
+    }
+    .secure-control-box .text-box h3{
+        margin-bottom: 5px;
+    }
+    .secure-control-box .text-box h3 span {
+        display: inline-block;
+        margin-right: 12px;
+        vertical-align: middle;
+    }
+    .owl-theme .owl-dots .owl-dot span{
+        margin: 0 13px;
+        background-color: rgba(51, 51, 51, 0.30);
+        width: 5px;
+        height: 5px;
+    }
+    .owl-theme .owl-dots .owl-dot.active span{
+        color: #333;
+    }
+    .owl-theme .owl-nav.disabled + .owl-dots {
+        margin-top: 23px;
+    }
+    .secure-control-sec {
+        padding: 11px 20px 30px;
+    }
+    .hedding {
+        margin-bottom: 50px;
+    }
+    .hedding h2{
+        font-size: 25px;
+    }
+    .betters-tools-sec {
+        padding: 43px 0;
+    }
+    .including-tools h3 {
+        font-size: 25px;
+        margin: 0 auto 55px;
+    }
+    .including-tools {
+        margin: 44px 0 0;
+    }
+    .proffesionals-trading-sec .text-box img{
+        display: none;
+    }
+    #tab_selector{
+        display: block;
+    }
+    .trading-work-inner .nav-tabs--vertical {
+        display: none; 
+    }
+    .trading-work-inner .flex-row {
+        flex-direction: column !important;
+    }
+    .trading-work-sec {
+        padding: 44px 0;
+    }
+    .trading-work-inner{
+        margin: 0 -15px;
+    }
+    .trading-work-inner .form-control {
+        border: none;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: 'Lato', sans-serif;
+        color: #333333;
+        height: 60px !important;
+        padding: 0 15px;
+        background: #fff url(../img/down-arrow.png) 96% center no-repeat;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+    .trading-work-box-inner {
+        padding: 0 20px;
+    }
+    .trading-work-box-inner .trading-work-box h3{
+        margin-bottom: 13px;
+    }
+    .trading-work-box-inner .trading-work-box {
+        margin-bottom: 30px;
+    }
+    .trading-work-box-inner .trading-work-box:last-child{
+        margin-bottom: 0;
+    }
+    .footer-inner h3 .company-img{
+        display: none;
+    }
+    .footer-inner h3 a .arrow-down{
+        display: block;
+    }
+    .footer-inner{
+        border-bottom:  1px solid rgba(151, 151, 151, 0.30);
+    }
+    .footer-inner h3 a {
+        padding: 37px 0;
+    }
+    .footer-inner.footer-second h3 a{
+        padding-top: 0;
+    }
+    .footer-links{
+        display: none;
+        margin-top: 0;
+        padding-bottom: 19px;
+    }
+    .footer-inner.footer-first{
+        border-bottom: none;
+        padding-top: 37px;
+    }
+    .footer-inner h3.active a .arrow-down{
+        transform: rotate(180deg);
+    }
+    .footer-inner h3.dasktop-version{
+        display: none;
+    }
+    .footer-inner h3.mobile-version{
+        display: block;
+    }
+    .about-descripcion-box .text-box h4 {
+        font-size: 20px; 
+        line-height: 30px;
+        margin: 20px 0;
+        max-width: 550px;
+        padding-top: 10px; 
+    }
+    .about-descripcion-box .text-box {
+        padding-bottom: 50px;
+        padding-top: 30px;
+    }
+    .about-descripcion-box .text-box h3 {
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .banner-title {
+        padding: 30px 0;
+    }
+    .order-book-modal .modal-dialog {
+        max-width: 95%;
+    }
+    .registor-modal .login-modal-left {
+        padding: 20px;
+        width: 100%;
+    }
+    .news-banner .news-banner-inner h2 {
+        font-size: 25px;
+        margin-bottom: 33px;
+    }
+    .news-banner {
+        padding-bottom: 75px;
+        padding-top: 46px;
+    }
+    .trading-copy-top {
+        flex-direction: column-reverse;
+        padding: 0 15px;
+    }
+    .news-info-dasktop {
+        background-color: #ffffff;
+        margin: 0 -15px;
+    }
+    .trading-copy-top .trading-copy-top-left{
+        width: 100%;
+        display: none;
+    }
+    .trading-copy-top .trading-copy-top-rigth {
+        height: 40px;
+        display: none;
+        width: 100%;
+    }
+    .trading-copy-top .trading-copy-top-rigth .form-control {
+        height: 40px;
+        width: 100%;
+    }
+    .trading-copy-top .trading-copy-top-rigth a {
+        top: 50%;
+        transform: translate(0px, -50%);
+    }
+    .news-info-filter .trading-copy-top .trading-copy-top-left .form-control{
+        border: 1px solid #E4E4E4;
+        margin-top: 15px;
+        width: 100%;
+        background: #ffffff url("../img/down-arrow.png") no-repeat scroll 97% center;
+    }
+    .news-info-dasktop{
+        display: none;
+        margin-bottom: 30px;
+    }
+    .news-info-mobile {
+        display: block;
+    }
+    .news-info-filter {
+        padding: 20px 0;
+    }
+    .news-info-dasktop.active{
+        display: block;
+    }
+    .news-info-dasktop.active2{
+        display: block;
+    }
+    .news-info-dasktop.active .trading-copy-top  .trading-copy-top-left{
+        display: block;
+    }
+    .news-info-dasktop.active2 .trading-copy-top  .trading-copy-top-rigth{
+        display: block;
+    }
+    .news-detail-box .text-box {
+        padding: 15px;
+    }
+    .news-detail-box .text-box h3 {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+    .pagination {
+        margin-top: 20px;
+    }
+    .news-info-sec {
+        padding-bottom: 50px;
+    }
+    .news-banner .news-banner-inner p{
+        line-height: 30px;
+    }
+    .trading-banner{
+        padding: 30px 0;
+    }
+    .trading-banner-inner {
+        align-items: start; 
+        flex-direction: column; 
+    }
+    .paneladmin-page .trading-banner .title p{
+        display: none;
+    }
+    .panel-administrac {
+        width: 100%;
+    }
+    .paneladmin-page .trading-banner a {
+        max-width: 100%;
+        min-width: 100%;
+        margin: 0;
+        padding: 0 40px;
+        text-align: left;
+        position: relative;
+    }
+    .paneladmin-page .trading-banner a img{
+        position: absolute;
+        top: 50%;
+        transform: translate(0,-50%);
+        right: 40px;
+    }
+    .paneladmin-page .trading-banner a.editar-mis {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .paneladmin-page .trading-banner a.personal-conf {
+        height: auto;
+        line-height: inherit;
+        margin-bottom: 33px;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .panel-administrac-inner {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .referal-program-inner .multipal-tabs {
+        align-items: flex-start;
+        flex-direction: column-reverse;
+        margin-top: 63px;
+    }
+    .referal-program-inner .multipal-tabs p span{
+        display: none;
+    }
+    .referal-program-inner .multipal-tabs p a{
+        margin-left: 0;
+    }
+    .referal-program-inner .multipal-tabs .dropdown{
+        position: absolute;
+        right: 20px;
+        top: -4px;
+    }
+    .mobile-version{
+        display: block;
+    }
+    .dasktop-version{
+        display: none;
+    }
+    .referal-program-inner-box .socail-link {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .referal-program-inner-box .socail-link a{
+        margin:0;
+    }
+    .referal-program-inner-box .card-header.active .socail-link a{
+        transform: rotate(-180deg);
+    }
+    .referal-program-inner-box .card-boday{
+        border-top: 1px solid rgba(151, 151, 151,0.30); 
+    }
+    .referal-program-inner-box .card-boday .socail-link {
+        padding: 30px 20px;
+    }
+    .referal-program-inner-box .card-boday .socail-click{
+        padding: 0 20px 30px;
+    }
+    .referal-program-graph-box .text-box h4{ 
+        margin-bottom: 20px;
+        padding: 16px 20px 30px;
+    }
+    .referal-program-graph-box .imnage-holder img{
+        width: 100%;
+    }
+    .referal-program-inner-box .socail-click ul li{
+        width: 32%;
+        margin: 0;
+    }
+    .referal-program-inner-box .socail-click ul li:first-child{
+        margin: 0;
+    }
+    .multipal-tabs .nav-pills .nav-item {
+        margin-right: 26px;
+    }
+    .trading-banner .add-pair {
+        margin-top: 35px;
+        width: 100%;
+    }
+    .anadir-dropdown {
+        position: relative;
+        width: 100%;
+    }
+    .trading-banner a{
+        text-align: left;
+        padding: 0 40px;
+        position: relative;
+    }
+    .trading-banner a img{
+        position: absolute;
+        top: 50%;
+        transform: translate(0,-50%);
+        right: 40px;
+    }
+    .portfolio-sort-mobaile{
+        display: none;
+    }
+    .portfolio-sort-box {
+        margin-top: 25px;
+    }
+    .portfolio-sec {
+        padding: 20px 0 50px;
+    }
+    .portfolio-quantity {
+        margin: 50px 0;
+        padding: 30px;
+    }
+    .portfolio-quantity .image-holder{
+        text-align: center;
+    }
+    .portfolio-quantity .text-box::after{
+        display: none;
+    }
+    .portfolio-quantity .text-box {
+        padding: 30px 0 0;
+    }
+    .portfolio-quantity .text-box ul {
+        max-width: 100%;
+    }
+    .transaction-history-titile h2 {
+        font-size: 20px;
+        text-align: left;
+    }
+    .pricing-inner .nav-pills {
+        display: none;
+    }
+    .pricing-inner select.form-control {
+        -moz-appearance: none;
+        background: #ffffff url("../img/down-arrow.png") no-repeat scroll 96% center;
+        border: medium none;
+        color: #333333;
+        font-family: "Lato",sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        height: 60px !important;
+        padding: 0 15px;
+    }
+    .pricing-inner .news-info-mobile { 
+        margin: 0 -15px;
+        padding: 25px 15px;
+    }
+    .pricing-inner-selct {
+        background-color: #ffffff;
+        margin: 0 -15px;
+        border-bottom: 1px solid rgba(151, 151, 151, 0.10);
+        padding: 0 15px;
+    }
+    .portfolio-open-orders{
+        display: none;
+    }
+    .transaction-history-inner .trading-copy-detail {
+        padding-bottom: 0;
+    }
+    .transaction-history-titile {
+        padding-bottom: 35px;
+    }
+    .pricing-detail {
+        padding-top: 20px;
+    }
+    .pricing-page .news-banner {
+        padding-bottom: 10px; 
+    }
+    .socail-authors-top{
+        display: none;
+    }
+    .socail-authors-box {
+        flex-direction: row;
+        margin: 0 auto;
+        max-width: 270px;
+        text-align: left;
+    }
+    .socail-authors-box .text-box ul li {
+        margin-right: 15px;
+    }
+    .socail-authors-box .text-box {
+        padding-left: 5px;
+        width: 100%;
+        padding-left: 20px;
+    }
+    .socail-authors-box .text-box ul li img{
+        display: inline-block;
+    }
+    .social-network-banner .text-box h1{
+        font-size: 25px;
+    }
+    .social-network-banner .text-box p{
+        line-height: 30px;
+    }
+    .social-network-banner {
+        padding: 104px 0 78px;
+    }
+    .socail-publicar {
+        padding: 50px 0;
+    }
+    .more-button {
+        margin-top: 30px;
+        text-align: center;
+    }
+    .socail-publicar-top{
+        display: none;
+    }
+    .socail-publicar{
+        padding-top: 0; 
+    }
+    .socail-publicar .news-info-mobile {
+        margin: 0 -15px;
+        padding: 25px 15px;
+    }
+    .socail-authors {
+        padding: 20px 0;
+        border-bottom: 1px solid rgba(151, 151, 151, 0.10);
+    }
+    .trading-banner-inner .add-pair .form-control{
+        display: none;
+    }
+    .trading-copy-top-main{
+        padding: 0;
+    }
+    .trading-copy .news-info-mobile{
+        margin-bottom: 0;
+    }
+    .trading-copy-top .trading-copy-top-left .form-control {
+        margin: 15px 0 0;
+        width: 100%;
+    }
+    .trading-copy-detail {
+        padding-bottom: 30px;
+    }
+    .anadir-dropdown-box {
+        right: 0;
+        width: 100%;
+    }
+    .paneladmin-account-box .saldo-dropdown {
+        left: auto !important;
+        transform: translate(0px, 0px) !important;
+        right: 0;
+    }
+    .header-inner .login-right ul li .notification-submenu ul li {
+        margin-bottom: 28px;
+        margin-left: 0;
+        margin-right: 0 !important;
+        margin-top: 0;  
+        display: block;
+        text-align: left;
+    }
+    .header-inner .login-right ul li .notification-submenu ul li:last-child{
+        display: inline-block;
+    }
+    .notification-submenu {
+        border-radius: 0;
+        box-shadow: inherit;
+        height: 100%;
+        position: fixed;
+        right: -100%;
+        top: 0;
+        width: 288px;
+        display: block !important;
+        z-index: 100;
+        transition: all 0.5s ease-in-out;
+    }
+    .notification-submenu.active{
+        right: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    .header-inner .login-right ul li .notification-submenu ul {
+        height: 100%;
+    }
+    .header-inner .login-right ul li .notification-submenu .cnfigurar-avisos {
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        background-color: #fff;
+    }
+    .order-book-modal .modal-body .close{
+        display: none;
+    }
+    .order-book-modal .modal-body  .login-modal-top .close{
+        display: block;
+    }
+    .login-modal-top {
+        align-items: center;
+        display: flex;
+    }
+    .modal-open,
+    .modal {
+        padding-right: 0 !important;
+    }
+    .order-book-modal .modal-dialog {
+        height: 100%;
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+    .order-book-modal .modal-content {
+        border-radius: 0;
+        height: 100%;
+    }
+    .login-modal-inner {
+        display: flex;
+        flex-direction: column;
+    }
+    .login-modal-left {
+        padding: 20px 20px 0;
+        width: 100%;
+    }
+    .login-modal-rigth {
+        background: none;
+        display: block;
+        border-top: 1px solid rgba(151, 151, 151, 0.20);
+        padding: 20px;
+        width: 100%;
+    }
+    .login-modal-rigth h3{
+        color: #999999;
+        font-family: "Lato",sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        padding-bottom: 0;
+        display: inline-block;
+    }
+    .login-modal-rigth p{
+        display: none;
+    }
+    .login-modal-rigth a {
+        background-color: rgba(0, 0, 0, 0);
+        border: medium none;
+        float: right;
+        border-radius: 0;
+        color: #23D3E3;
+        display: inline-block;
+        font-family: "Lato",sans-serif;
+        font-size: 14px;
+        font-weight: 900;
+        height: auto;
+        line-height: inherit;
+        margin-top: 0;
+        text-align: center;
+        width: auto;
+    }
+    .login-modal-rigth a img{
+        display: none;
+    }
+    .recover-password .login-modal-left h3::after{
+        left: -13px;
+    }
+    .recover-password .login-modal-left h3{
+        padding-left: 15px;
+    }
+    .new-password a {
+        margin-top: 0;
+        padding-bottom: 20px;
+    }
+    .registor-modal .cheack-boxs {
+        margin-top: 0;
+    }
+    .registor-modal .login-modal-left .form-group {
+        margin-bottom: 20px;
+    }
+    .modal-backdrop.show{
+        opacity: 1;
+    }
+    .modal-backdrop{
+        background-color: #FFF;
+    }
+    .registor-modal .login-modal-left .form-group .btn-defult{
+        margin-top: 20px;
+    }
+    .trading-graph-modal .modal-body{
+        padding: 0 0 20px 0;
+    }
+    .trading-graph-modal .modal-body .title{
+        padding: 0 20px;
+    }
+    .trading-graph-modal .order-book-inner,
+    .trading-modal-wave{
+        padding: 0 20px;
+    }
+    .trading-modal-transacciones{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .edit-personal-information-inner{
+        padding: 0 20px;
+    }
+    .become-pro-inner{
+        padding: 0 20px;
+    }
+    .become-pro-hedding,
+    .become-pro-hedding h3{
+        margin-bottom: 30px;
+    }
+    .become-pro-inner .pricing-box p {
+        text-align: center;
+    }
+    .become-pro-inner .pricing-box{
+        padding: 20px;
+    }
+    .become-pro-hedding p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .become-pro-inner .pricing-box ul {
+        padding-left: 0;
+        padding-top: 30px;
+        text-align: left;
+    }
+    .pricing-box ul li {
+        margin-bottom: 10px;
+        padding-left: 30px;
+    }
+    .buy-detail-box {
+        padding: 20px;
+    }
+    .including-tools .image-holder {
+        width: 100%;
+        max-width: 100%;
+    }
+    .including-tools .image-holder p,
+    .including-tools .image-holder span{
+        display: none;
+    }
+    .including-tools .image-holder .image-inner ul li a {
+        font-size: 10px;
+    }
+    .including-tools .image-holder .image-inner ul li:first-child {
+        bottom: 90px;
+        left: 85px;
+    }
+    .including-tools .image-holder .image-inner ul li:nth-child(2) {
+        left: 300px;
+        bottom: 29px;
+    }
+    .including-tools .image-holder .image-inner ul li:nth-child(3) {
+        left: 150px;
+        top: 78px;
+    }
+    .including-tools .image-holder .image-inner ul li:nth-child(4) {
+        left: 380px;
+        top: 22px;
+    }
+}
+@media (max-width: 575px)  {
+    .trading-buttns-box{
+        max-width: 100%;
+    }
+    .paneladmin-account-box .saldo-dropdown {
+        width: 340px;
+        padding: 25px;
+    }
+    .order-book-modal .modal-body .title h3{
+        font-size: 14px;
+    }
+    .order-book-modal .modal-body .title p span {
+        font-size: 25px;
+        margin: -6px 0 0 10px;
+    }
+    .order-book-modal .modal-body .title p span img {
+        margin-right: 6px;
+    }
+    .order-book-box table thead tr th{
+        padding: 10px 30px;
+    }
+    .order-book-box{
+        margin-bottom: 30px;
+    }
+    .order-book-modal .modal-body .title {
+        margin-bottom: 15px;
+        flex-direction: column;
+    }
+    .order-book-modal .modal-body .title p{
+        margin: 30px 0 0;
+    }
+    .trading-modal-wave table {
+        width: 500px;
+    }
+    .edit-personal-information-inner .anadir-dropdown-box ul li {
+        width: 50%;
+    }
+    .including-tools .image-holder .image-inner ul li a {
+        font-size: 7px;
+    }
+    .including-tools .image-holder .image-inner ul li:first-child {
+        bottom: 65px;
+        left: 62px;
+    }
+    .including-tools .image-holder .image-inner ul li:nth-child(2) {
+        left: 225px;
+        bottom: 22px;
+    }
+    .including-tools .image-holder .image-inner ul li:nth-child(3) {
+        left: 115px;
+        top: 55px;
+    }
+    .including-tools .image-holder .image-inner ul li:nth-child(4) {
+        left: 285px;
+        top: 14px;
+    }
+}
+@media (max-width: 479px)  {
+    .banner-title a img {
+        margin-left: 15px;
+    }
+    .banner-title a {
+        height: 45px;
+        line-height: 45px;
+        max-width: 155px;
+        padding-left: 0;
+    }
+    .banner-title h2 {
+        font-size: 16px;
+    }
+    .about-descripcion-box .text-box h4{
+        font-size: 16px;
+    }
+    .pagination ul li.left-arrow {
+        margin-right: 15px;
+    }
+    .pagination ul li.right-arrow {
+        margin-left: 15px;
+    }
+    .referal-program-inner-box .card-boday .socail-click {
+        padding: 0 2px 30px;
+    }
+    .referal-program-inner-box .socail-click ul li span{
+        font-size: 12px;
+    }
+    .anadir-dropdown-box{
+        padding: 20px;
+    }
+    .anadir-dropdown-box ul {
+        margin-top: 1px;
+        padding-right: 20px;
+    }
+    .anadir-dropdown-box .title {
+        padding-right: 20px;
+    }
+    .anadir-dropdown-box ul li a img {
+        left: 50%;
+        transform: translate(-50%,-50%);
+        top: 50%;
+    }
+    .anadir-dropdown-box ul li a{
+        width: 100%;
+        min-width: 100%;
+    }
+    .anadir-dropdown-box ul li{
+        padding: 0 10px;
+        width: 50%;
+    }
+    .multipal-tabs .dropdown .saldo-dropdown{
+        width: 250px;
+        padding: 25px;
+    }
+    .trading-modal-wave .hedding {
+        flex-direction: column;
+    }
+    .trading-modal-wave .hedding span{
+        margin-top:  30px;
+    }
+    .trading-modal-wave .form-control {
+        margin: 20px 0;
+        width: 100%;
+    }
+}
+@media (max-width: 414px)  {
+    .including-tools img {
+        height: 150px;
+        object-fit: cover;
+    }
+    .including-tools .image-holder .image-inner ul li:first-child {
+        bottom: 51px;
+        left: 19px;
+    }
+    .including-tools .image-holder .image-inner ul li:nth-child(2) {
+        left: 148px;
+        bottom: 17px;
+    }
+    .including-tools .image-holder .image-inner ul li:nth-child(3) {
+        left: 59px;
+        top: 41px;
+    }
+    .including-tools .image-holder .image-inner ul li:nth-child(4) {
+        left: 195px;
+        top: 7px;
+    }
+}
+@media (max-width: 384px)  {
+    .including-tools .image-holder .image-inner ul li:first-child {
+        left: 5px;
+    }
+    .including-tools .image-holder .image-inner ul li:nth-child(2) {
+        left: 132px;
+    }
+    .including-tools .image-holder .image-inner ul li:nth-child(3) {
+        left: 42px;
+    }
+    .including-tools .image-holder .image-inner ul li:nth-child(4) {
+        left: 180px;
+    }
+}
+@media (max-width: 379px)  {
+    .banner-sec .text-box h1 {
+        font-size: 26px;
+
+    }
+    .paneladmin-account-box .saldo-dropdown {
+        padding: 25px;
+        width: 250px;
+    }
+    .saldo-dropdown h4{
+        margin-bottom: 25px;
+    }
+    .saldo-dropdown .form-group .form-control{
+        font-size: 12px;
+    }
+    .edit-personal-information-inner .anadir-dropdown-box ul li {
+        width: 100%;
+    }
+}
+@media (max-width: 375px)  {
+    .including-tools img {
+        height: 140px;
+        object-fit: cover;
+    }
+    .including-tools .image-holder .image-inner ul li a {
+        font-size: 6px;
+    }
+    .including-tools .image-holder .image-inner ul li:first-child {
+        bottom: 48px;
+        left: 12px;
+    }
+    .including-tools .image-holder .image-inner ul li:nth-child(2) {
+        left: 133px;
+        bottom: 16px;
+    }
+    .including-tools .image-holder .image-inner ul li:nth-child(3) {
+        left: 51px;
+        top: 37px;
+    }
+    .including-tools .image-holder .image-inner ul li:nth-child(4) {
+        left: 179px;
+        top: 6px;
+    }
+}
+@media (max-width: 360px)  {
+    .including-tools .image-holder .image-inner ul li:first-child {
+        left: 5px;
+    }
+    .including-tools .image-holder .image-inner ul li:nth-child(2) {
+        left: 126px;
+    }
+    .including-tools .image-holder .image-inner ul li:nth-child(3) {
+        left: 42px;
+    }
+    .including-tools .image-holder .image-inner ul li:nth-child(4) {
+        left: 169px;
+    }
+}
+@media (max-width: 320px)  {
+    .including-tools img {
+        height: 115px;
+        object-fit: cover;
+    }
+    .including-tools .image-holder .image-inner ul li a {
+        font-size: 5px;
+    }
+    .including-tools .image-holder .image-inner ul li:first-child {
+        bottom: 40px;
+        left: 13px;
+    }
+    .including-tools .image-holder .image-inner ul li:nth-child(2) {
+        left: 113px;
+        bottom: 13px;
+    }
+    .including-tools .image-holder .image-inner ul li:nth-child(3) {
+        left: 43px;
+        top: 28px;
+    }
+    .including-tools .image-holder .image-inner ul li:nth-child(4) {
+        left: 149px;
+        top: 3px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

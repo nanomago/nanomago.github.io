@@ -1,0 +1,4492 @@
+body {
+    font-weight: 400;
+    line-height: 1;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    background-color: #f9f9f9 !important;
+}
+b, body, canvas, form, h1, h2, h3, h4, h5, h6, header, html, i, img, label, li, nav, p, section, span, strong, table, tbody, td, th, thead, tr, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: 0 0
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+h1, h2, h3, h4, h5,h5{
+    font-family: 'Open Sans', sans-serif;
+}
+ul li,
+ol li{
+    list-style: none;
+    margin: 0;
+}
+blockquote, q {
+    quotes: none
+}
+
+blockquote:after, blockquote:before, q:after, q:before {
+    content: '';
+    content: none
+}
+
+a, button {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-decoration: none;
+    background: 0 0;
+    outline: 0 !important;
+    text-decoration: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+a:focus, a:hover, a:active {
+    outline: 0;
+    box-shadow: 0;
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through
+}
+
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+.form-control:focus{
+    box-shadow: none;
+}
+
+input, select {
+    vertical-align: middle
+}
+figure{
+    margin: 0;
+}
+.child-pernt {
+    display: table;
+    height: 100%;
+    width: 100%; 
+}
+.child {
+    display: table-cell;
+    vertical-align: middle; 
+}
+.wrapper {
+    padding: 60px 0 0 0;
+}
+.wrapper.active{
+    padding: 0;
+}
+
+/*======= Alert Styling =======*/
+.alert {
+    position: absolute;
+    padding: 20px 0 26px;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    background-color: #fff;
+}
+.alert .text-box {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.alert p{
+    font-weight: 500;
+    color: #666666;
+    font-size: 14px;
+}
+.alert p strong{
+    color: #23D3E3;
+}
+.alert .close{
+    padding: 0;
+    top: 11px;
+    right: 110px;
+    cursor: pointer;
+    position: static;
+}
+.alert .close span img{
+    max-width: 11px;
+    height: 11px;
+}
+
+
+/*======= Header Styling =======*/
+.wrapper.active .header{
+    top: 0;
+}
+.header{
+    padding: 23px 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 60px;
+}
+.header-inner{
+    align-items: center;
+    display: flex;
+}
+.header-inner .header-logo{
+    margin: 0 60px 0 0;
+    padding: 0;
+}
+.header-nave{
+    display: flex;
+    width: 100%;
+}
+.header-nave .navbar-nav{
+    flex-direction: row;
+    align-items: center;
+}
+.header-inner .navbar-nav .nav-item {
+    margin: 0 20px;
+}
+.header-inner .navbar-nav .nav-item .nav-link{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0;
+}
+.header-inner .login-right ul{
+    display: flex;
+    align-items: center;
+}
+.header-inner .login-right ul li{
+    margin-left: 40px;
+    position: relative;
+}
+.header-inner .login-right ul li:first-child {
+    margin-left: 0;
+    margin-right: 22px;
+}
+.header-inner .login-right ul li:first-child:after{
+    position: absolute;
+    content: "";
+    right: -34px;
+    top: 50%;
+    width: 2px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: translate(0,-50%);
+}
+.header-inner .login-right ul li a{
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    vertical-align: middle;
+    display: inline-block;
+}
+.header-inner .login-right ul li a img{
+    vertical-align: middle;
+}
+.header-inner .login-right ul li.registrate-btn a{
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: 130px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    padding: 0;
+}
+.header-inner .login-right ul li.registrate-btn a:hover{
+    background-color: #fff;
+    color: #333333;
+}
+.login-right .menu-icon{
+    display: none;
+}
+/*======= Notification Submenu Styling =======*/
+.notification-submenu{
+    position: absolute;
+    width: 288px;
+    border-radius: 6px;
+    background: #fff;
+    right: 0;
+    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+    top: 50px;
+}
+.header-inner .login-right ul li .notification-submenu ul{
+    display: block;
+    padding: 40px 50px 40px 30px;
+    position: relative;
+}
+.header-inner .login-right ul li .notification-submenu ul:after{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    background-color: rgba(151, 151, 151, 0.20);
+}
+.header-inner .login-right ul li .notification-submenu ul li{
+    margin: 0;
+    color: #999999;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 28px;
+    padding-left: 25px;
+    position: relative;
+}
+.header-inner .login-right ul li .notification-submenu ul li:after{
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    left: -3px;
+    border-radius: 50px;
+    top: 10px;
+    transform: translate(0,0);
+    background-color: #23D3E3;
+}
+.header-inner .login-right ul li .notification-submenu ul li:first-child:after{
+    background-color: #23D3E3 !important;
+}
+.header-inner .login-right ul li .notification-submenu ul li:last-child:after{
+    background-color: #CCCCCC !important;
+}
+.header-inner .login-right ul li .notification-submenu ul li:last-child{
+    margin-bottom: 0;
+}
+.header-inner .login-right ul li .notification-submenu ul li strong{
+    color: #23D3E3;
+    font-weight: normal;
+}
+.header-inner .login-right ul li .notification-submenu .cnfigurar-avisos{
+    border-top: 1px solid rgba(151, 151, 151, 0.20);
+    text-align: center;
+    padding: 22px 0;
+}
+.header-inner .login-right ul li .notification-submenu .cnfigurar-avisos a{
+    color: #23D3E3 !important;
+    font-size: 14px;
+    font-style: italic;
+}
+.header-inner .login-right ul li .notification-submenu .cnfigurar-avisos a img{
+    vertical-align: middle;
+    margin-right: 20px;
+}
+/*======= Custom Styling =======*/
+.banner-sec{
+    background: rgba(0, 0, 0, 0) url("../img/banner-bg.png") no-repeat scroll center top / cover ;
+    padding: 225px 0 0;
+    text-align: center;
+}
+.banner-inner{
+    background: url(../img/banner-image.png) no-repeat;
+    background-position: left bottom;
+    padding-bottom: 202px;
+}
+.banner-sec .image-holder{
+    margin-bottom: -2px;
+}
+.banner-sec .image-holder img{
+    width: 100%;
+}
+.banner-sec .text-box h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.25;
+    margin-bottom: 21px;
+}
+.banner-sec .text-box p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.88;
+    color: #fff;
+    margin-bottom: 51px;
+}
+.btn-defult{
+    width: 180px;
+    border: 1px  solid transparent;
+    height: 55px;
+    line-height: 58px;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+}
+.btn-defult:hover{
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: transparent;
+}
+/*======= Secure Control Styling =======*/
+.secure-control-sec{
+    padding: 28px 0 36px;
+    background-color: #FFF;
+}
+.secure-control-box{
+    display: flex;
+}
+.secure-control-box .image-holder{
+    margin: 10px 0 0 0;
+}
+.secure-control-box .text-box{
+    padding-left: 30px;
+}
+.secure-control-box .text-box h3{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2;
+    color: #333333
+}
+.secure-control-box .text-box h3 span{
+    display: none;
+}
+.secure-control-box .text-box h3 span img{
+    width: auto;
+}
+.secure-control-box .text-box p{
+    font-size: 13px;
+    line-height: 1.77; 
+    color: #999999;
+}
+/*======= Betters Tools Styling =======*/
+.hedding{
+    text-align: center;
+    margin-bottom: 110px;
+}
+.hedding p{
+    font-size: 10px;
+    font-weight: 900;
+    line-height: 3;
+    letter-spacing: 1px;
+    color: #333333;
+    margin-bottom: 12px;
+}
+.hedding h2{
+    font-size: 30px;
+    font-weight: 300; 
+    line-height: 1.67;  
+    color: #333333;
+}
+.betters-tools-sec{
+    padding: 120px 0 156px;
+}
+.betters-tools-box{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.betters-tools-box img{
+    margin: 0 auto;
+    width: auto !important;
+}
+.betters-tools-box h3{
+    font-size: 20px;
+    font-weight: 600; 
+    line-height: 2.5; 
+    margin-bottom: 15px;
+    color: #333333;
+    margin-top: 40px;
+}
+.betters-tools-box p{
+    color: #999999;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 2;
+    margin: 0 auto;
+    max-width: 314px;
+}
+.including-tools{
+    text-align: center;
+    margin: 105px 0 0 0;
+}
+.including-tools h3 {
+    color: #333333;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.67;
+    margin: 0 auto 85px;
+    max-width: 730px;
+}
+/*======= Proffesionals Trading Styling =======*/
+.proffesionals-trading-sec{
+    background: url(../img/trading-bg.png) no-repeat;
+    background-size: cover;
+    padding: 120px 0 113px;
+}
+.proffesionals-trading-sec .hedding {
+    margin-bottom: 60px; 
+}
+.proffesionals-trading-sec .hedding p,
+.proffesionals-trading-sec .hedding h2{
+    color: #fff;
+}
+.proffesionals-trading-sec .text-box{
+    text-align: center;
+}
+.proffesionals-trading-sec .text-box .btn-defult{
+    margin-top: 56px;
+}
+/*======= Trading Works Styling =======*/
+.trading-work-sec{
+    padding: 90px 0 150px;
+}
+.trading-work-inner .nav-tabs--vertical {
+    border-bottom: medium none;
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 365px;
+    width: 100%;
+}
+#tab_selector{
+    display: none;
+}
+.trading-work-inner .nav-tabs .nav-item {
+    margin-bottom: 25px;
+}
+.trading-work-inner .nav-tabs .nav-item .nav-link{
+    font-size: 20px;
+    font-weight: 400; 
+    line-height: 2.5; 
+    color: #24d4e3;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+}
+.trading-work-inner .nav-tabs .nav-item.show .nav-link, .trading-work-inner .nav-tabs .nav-link.active {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    color: #333333;
+    border: none;
+}
+.trading-work-box-inner .trading-work-box {
+    max-width: 512px;
+    margin-bottom: 50px;
+}
+.trading-work-box-inner .trading-work-box h3{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 2.5;
+    color: #333333;
+    margin-bottom: 20px;
+}
+.trading-work-box-inner .trading-work-box p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2;
+    color: #999999;
+}
+/*======= Footer Styling =======*/
+.footer{
+    box-shadow: 0 -2px 14px 0 rgba(0, 0, 0, 0.04);
+    background-color: #ffffff;
+    padding: 60px 0 76px;
+}
+.footer-inner p{
+    opacity: 0.5;
+    font-size: 14px; 
+    font-weight: 400;
+    font-style: italic; 
+    margin-top: 25px;
+    color: #666666;
+}
+.footer-socail{
+    margin-top: 50px;
+    position: relative;
+    padding-top: 30px;
+}
+.footer-socail:after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 45px;
+    height: 3px;
+    opacity: 0.4;
+    background-color: #979797;
+}
+.footer-socail ul li{
+    float: left;
+    margin-right: 30px;
+}
+.footer-inner h3 a{
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #222222;
+    display: block;
+}
+.footer-inner h3{
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #222222;
+    display: block;
+}
+.footer-inner h3.mobile-version{
+    display: none;
+}
+.footer-inner h3 .company-img{
+    display: block;
+    margin-bottom: 10px;
+}
+.footer-inner h3 a .arrow-down{
+    float: right;
+    display: none;
+}
+.footer-links {
+    margin-top: 38px;
+}
+.footer-links ul li a{
+    opacity: 0.5;
+    font-size: 14px;
+    font-weight: 400; 
+    color: #666666;
+    display: block;
+    margin-bottom: 21px;
+}
+.footer-links ul li a:hover{
+    color: #24d4e3;
+}
+.betters-tools-sec .owl-theme .owl-nav [class*="owl-"]{
+    margin: 0 auto;
+}
+.betters-tools-sec .owl-theme .owl-nav [class*="owl-"]:hover{
+    background-color: transparent;
+}
+.betters-tools-sec .owl-theme .owl-nav {
+    margin-top: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 600px;
+}
+.betters-tools-sec .owl-theme .owl-nav .owl-prev {
+    float: left;
+}
+.betters-tools-sec .owl-theme .owl-nav .owl-next {
+    float: right;
+}
+/*======= Right Side Menu Styling =======*/
+.right-menu{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 282px;
+    background-color: #3866F7;
+    padding: 90px 40px;
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+}
+.right-menu.active{
+    right: 0;
+    transition: all 0.5s ease-in-out;
+}
+.right-menu-nav ul li{
+    margin-bottom: 42px;
+}
+.right-menu-nav ul li:last-child{
+    margin-bottom: 0;
+}
+.right-menu-nav ul li.active a{
+    color: #fff;
+}
+.right-menu-nav ul li a{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 20px;
+    font-weight: 400;
+}
+.right-menu-nav ul li a:hover{
+    color: #fff;
+}
+.right-menu .login-right {
+    bottom: 62px;
+    left: 0;
+    padding-left: 40px;
+    position: absolute;
+    width: 100%;
+}
+.right-menu .login-right ul li{
+    display: inline-block;
+    margin-right: 59px;
+    vertical-align: middle;
+    position: relative;
+}
+.right-menu .login-right ul li:first-child {
+    padding: 3px 0 0;
+}
+.right-menu .login-right ul li:first-child::after {
+    background-color: rgba(255, 255, 255, 0.5);
+    content: "";
+    height: 10px;
+    position: absolute;
+    right: -34px;
+    top: 50%;
+    transform: translate(0px, -50%);
+    width: 2px;
+}
+.right-menu .login-right ul li:last-child{
+    margin-right: 0;
+}
+.right-menu .login-right ul li a{
+    color: #fff;
+    font-weight: 700;
+}
+.right-menu .login-right ul li a .menu-right-icon{
+    height: 10px;
+    vertical-align: middle;
+    width: 13px;
+    margin-left: 13px;
+}
+/*======= About Us Page Styling =======*/
+.inner-pages{
+    background-color: #ffffff !important;
+}
+.header-second{
+    position: static;
+    padding: 35px 0;
+}
+.header-second .header-inner .header-logo img{
+    max-width: 88px;
+    height: 19px;
+}
+.header-second .header-inner .navbar-nav .nav-item .nav-link{
+    color: #666666;
+}
+.header-second .header-inner  .login-right ul li a img.gare-icon{
+    max-width: 15px;
+    height: 15px;
+    margin: 0;
+}
+.header-second .header-inner .login-right ul li:first-child::after{
+    background-color: rgba(102, 102, 102, 0.5); 
+}
+.header-second .header-inner .login-right ul li a{
+    font-size: 14px;
+    color: #666666;
+    font-weight: 900;
+}
+.header-second .header-inner .login-right ul li a img {
+    vertical-align: middle;
+    margin-left: 15px;
+}
+.header-second .header-inner .login-right ul li a .bell-icon{
+    margin-left: 15px;
+    display: inline-block;
+    max-width: 17px;
+    height: 18px;
+}
+.header-second .header-inner .login-right ul li span.count{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #24D4E3;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 10px;
+    text-align: center;
+    line-height: 25px;
+    margin-left: 10px;
+}
+/*======= About Banner Styling =======*/
+.about-banner{
+    border-top: 1px solid rgba(151, 151, 151, 0.09);
+    border-bottom: 1px solid rgba(151, 151, 151, 0.09);
+}
+.banner-title {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 0;
+}
+.banner-title h2{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+}
+.banner-title a{
+    background-color: #23D3E3;
+    display: inline-block;
+    color: #fff;
+    max-width: 215px;
+    height: 55px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    line-height: 55px;
+    border-radius: 3px;
+    font-size: 14px;
+    padding-left: 13px;
+    font-weight:  600;
+}
+.banner-title a img{
+    width: 18px;
+    height: 16px;
+    vertical-align: middle;
+    margin-left: 51px;
+}
+/*======= About Banner Styling =======*/
+.about-descripcion-box .text-box{
+    padding-top: 40px;
+    padding-bottom: 88px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.about-descripcion-box .text-box h3{
+    color: #222222;
+    font-size: 10px;
+    font-weight: 700;
+    padding-bottom: 45px; 
+    padding-top: 50px;
+}
+.about-descripcion-box .text-box p{
+    font-size: 14px;
+    color: #999999;
+    font-weight: 600;
+    line-height: 30px;
+}
+.about-descripcion-box .text-box h4{
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 50px;
+    position: relative;
+    padding-top: 30px;
+    margin: 80px 0 85px;
+}
+.about-descripcion-box .text-box h4:after{
+    position: absolute;
+    content: "";
+    background-color: #979797;
+    width: 58px;
+    height: 1px;
+    left: 0;
+    top: 0;
+}
+/*======= Trading Page Styling =======*/
+.trading-page .header{
+    background: #3a66f8;
+    background: -moz-linear-gradient(left, #3a66f8 0%, #24d4e3 100%);
+    background: -webkit-linear-gradient(left, #3a66f8 0%,#24d4e3 100%);
+    background: linear-gradient(to right, #3a66f8 0%,#24d4e3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a66f8', endColorstr='#24d4e3',GradientType=1 );
+}
+.trading-page .header-second .header-inner .navbar-nav .nav-item .nav-link,
+.trading-page .header-second .header-inner .login-right ul li a{
+    color: #FFF;
+}
+.trading-page .header-second .header-inner .login-right ul li:first-child::after{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+/*======= Trading Banner Styling =======*/
+.trading-banner{}
+.trading-banner .title h2{
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+}
+.trading-banner .title p{
+    font-weight: 400;
+    font-style: italic;
+    color: #999999;
+    font-size: 14px;
+}
+
+/*======= Secure Control Styling =======*/
+.secure-control-sec{
+    padding: 28px 0 36px;
+    background-color: #FFF;
+}
+.secure-control-box{
+    display: flex;
+}
+.secure-control-box .image-holder{
+    margin: 10px 0 0 0;
+}
+.secure-control-box .text-box{
+    padding-left: 30px;
+}
+.secure-control-box .text-box h3{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2;
+    color: #333333
+}
+.secure-control-box .text-box h3 span{
+    display: none;
+}
+.secure-control-box .text-box h3 span img{
+    width: auto;
+}
+.secure-control-box .text-box p{
+    font-size: 13px;
+    line-height: 1.77; 
+    color: #999999;
+}
+/*======= Betters Tools Styling =======*/
+.hedding{
+    text-align: center;
+    margin-bottom: 110px;
+}
+.hedding p{
+    font-size: 10px;
+    font-weight: 900;
+    line-height: 3;
+    letter-spacing: 1px;
+    color: #333333;
+    margin-bottom: 12px;
+}
+.hedding h2{
+    font-size: 30px;
+    font-weight: 300; 
+    line-height: 1.67;  
+    color: #333333;
+}
+.betters-tools-sec{
+    padding: 120px 0 156px;
+}
+.betters-tools-box{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.betters-tools-box img{
+    margin: 0 auto;
+    width: auto !important;
+}
+.betters-tools-box h3{
+    font-size: 20px;
+    font-weight: 600; 
+    line-height: 2.5; 
+    margin-bottom: 15px;
+    color: #333333;
+    margin-top: 40px;
+}
+.betters-tools-box p{
+    color: #999999;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 2;
+    margin: 0 auto;
+    max-width: 314px;
+}
+.including-tools{
+    text-align: center;
+    margin: 105px 0 0 0;
+}
+.including-tools h3 {
+    color: #333333;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.67;
+    margin: 0 auto 85px;
+    max-width: 730px;
+}
+.including-tools .image-holder{
+    max-width: 695px;
+    margin: 0 auto;
+    position: relative;
+}
+.including-tools .image-holder p {
+    position: absolute;
+    right: -112px;
+    top: 20px;
+}
+.including-tools .image-holder p a{
+    color: #999999;
+    font-size: 15px;
+    font-style: italic;
+}
+.including-tools .image-holder span{
+    position: absolute;
+    right: -112px;
+    bottom: 25px;
+}
+.including-tools .image-holder span a{
+    color: #999999;
+    font-size: 15px;
+    font-style: italic;
+}
+.including-tools .image-holder .image-inner{
+    position: relative;
+}
+.including-tools .image-holder .image-inner ul{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+.including-tools .image-holder .image-inner ul li:first-child{
+    position: absolute;
+    bottom: 83px;
+    left: 77px;
+
+}
+.including-tools .image-holder .image-inner ul li:nth-child(2){
+    position: absolute;
+    left: 285px;
+    bottom: 27px;
+}
+.including-tools .image-holder .image-inner ul li:nth-child(3){
+    position: absolute;
+    left: 143px;
+    top: 74px;
+}
+.including-tools .image-holder .image-inner ul li:nth-child(4){
+    position: absolute;
+    left: 360px;
+    top: 20px;
+}
+.including-tools .image-holder .image-inner ul li a{
+    font-size: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #3A66F8;
+}
+.including-tools .image-holder .image-inner ul li:nth-child(3) a,
+.including-tools .image-holder .image-inner ul li:nth-child(4) a{
+    color: #24D4E3;
+}
+/*======= Proffesionals Trading Styling =======*/
+.proffesionals-trading-sec{
+    background: url(../img/trading-bg.png) no-repeat;
+    background-size: cover;
+    padding: 120px 0 113px;
+}
+.proffesionals-trading-sec .hedding {
+    margin-bottom: 60px; 
+}
+.proffesionals-trading-sec .hedding p,
+.proffesionals-trading-sec .hedding h2{
+    color: #fff;
+}
+.proffesionals-trading-sec .text-box{
+    text-align: center;
+}
+.proffesionals-trading-sec .text-box .btn-defult{
+    margin-top: 56px;
+}
+/*======= Trading Works Styling =======*/
+.trading-work-sec{
+    padding: 90px 0 150px;
+}
+.trading-work-inner .nav-tabs--vertical {
+    border-bottom: medium none;
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 365px;
+    width: 100%;
+}
+#tab_selector{
+    display: none;
+}
+.trading-work-inner .nav-tabs .nav-item {
+    margin-bottom: 25px;
+}
+.trading-work-inner .nav-tabs .nav-item .nav-link{
+    font-size: 20px;
+    font-weight: 400; 
+    line-height: 2.5; 
+    color: #24d4e3;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+}
+.trading-work-inner .nav-tabs .nav-item.show .nav-link, .trading-work-inner .nav-tabs .nav-link.active {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    color: #333333;
+    border: none;
+}
+.trading-work-box-inner .trading-work-box {
+    max-width: 512px;
+    margin-bottom: 50px;
+}
+.trading-work-box-inner .trading-work-box h3{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 2.5;
+    color: #333333;
+    margin-bottom: 20px;
+}
+.trading-work-box-inner .trading-work-box p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2;
+    color: #999999;
+}
+/*======= Footer Styling =======*/
+.footer{
+    box-shadow: 0 -2px 14px 0 rgba(0, 0, 0, 0.04);
+    background-color: #ffffff;
+    padding: 60px 0 76px;
+}
+.footer-inner p{
+    opacity: 0.5;
+    font-size: 14px; 
+    font-weight: 400;
+    font-style: italic; 
+    margin-top: 25px;
+    color: #666666;
+}
+.footer-socail{
+    margin-top: 50px;
+    position: relative;
+    padding-top: 30px;
+}
+.footer-socail:after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 45px;
+    height: 3px;
+    opacity: 0.4;
+    background-color: #979797;
+}
+.footer-socail ul li{
+    float: left;
+    margin-right: 30px;
+}
+.footer-inner h3 a{
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #222222;
+    display: block;
+}
+.footer-inner h3{
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #222222;
+    display: block;
+}
+.footer-inner h3.mobile-version{
+    display: none;
+}
+.footer-inner h3 .company-img{
+    display: block;
+    margin-bottom: 10px;
+}
+.footer-inner h3 a .arrow-down{
+    float: right;
+    display: none;
+}
+.footer-links {
+    margin-top: 38px;
+}
+.footer-links ul li a{
+    opacity: 0.5;
+    font-size: 14px;
+    font-weight: 400; 
+    color: #666666;
+    display: block;
+    margin-bottom: 21px;
+}
+.footer-links ul li a:hover{
+    color: #24d4e3;
+}
+.betters-tools-sec .owl-theme .owl-nav [class*="owl-"]{
+    margin: 0 auto;
+}
+.betters-tools-sec .owl-theme .owl-nav [class*="owl-"]:hover{
+    background-color: transparent;
+}
+.betters-tools-sec .owl-theme .owl-nav {
+    margin-top: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 600px;
+}
+.betters-tools-sec .owl-theme .owl-nav .owl-prev {
+    float: left;
+}
+.betters-tools-sec .owl-theme .owl-nav .owl-next {
+    float: right;
+}
+/*======= Right Side Menu Styling =======*/
+.right-menu{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 282px;
+    background-color: #3866F7;
+    padding: 90px 40px;
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+}
+.right-menu.active{
+    right: 0;
+    transition: all 0.5s ease-in-out;
+}
+.right-menu-nav ul li{
+    margin-bottom: 42px;
+}
+.right-menu-nav ul li:last-child{
+    margin-bottom: 0;
+}
+.right-menu-nav ul li.active a{
+    color: #fff;
+}
+.right-menu-nav ul li a{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 20px;
+    font-weight: 400;
+}
+.right-menu-nav ul li a:hover{
+    color: #fff;
+}
+.right-menu .login-right {
+    bottom: 62px;
+    left: 0;
+    padding-left: 40px;
+    position: absolute;
+    width: 100%;
+}
+.right-menu .login-right ul li{
+    display: inline-block;
+    margin-right: 59px;
+    vertical-align: middle;
+    position: relative;
+}
+.right-menu .login-right ul li:first-child {
+    padding: 3px 0 0;
+}
+.right-menu .login-right ul li:first-child::after {
+    background-color: rgba(255, 255, 255, 0.5);
+    content: "";
+    height: 10px;
+    position: absolute;
+    right: -34px;
+    top: 50%;
+    transform: translate(0px, -50%);
+    width: 2px;
+}
+.right-menu .login-right ul li:last-child{
+    margin-right: 0;
+}
+.right-menu .login-right ul li a{
+    color: #fff;
+    font-weight: 700;
+}
+.right-menu .login-right ul li a .menu-right-icon{
+    height: 10px;
+    vertical-align: middle;
+    width: 13px;
+    margin-left: 13px;
+}
+/*======= About Us Page Styling =======*/
+.inner-pages{
+    background-color: #ffffff !important;
+}
+.header-second{
+    position: static;
+    padding: 35px 0;
+}
+.header-second .header-inner .header-logo img{
+    max-width: 88px;
+    height: 19px;
+}
+.header-second .header-inner .navbar-nav .nav-item .nav-link{
+    color: #666666;
+}
+.header-second .header-inner  .login-right ul li a img.gare-icon{
+    max-width: 15px;
+    height: 15px;
+    margin: 0;
+}
+.header-second .header-inner .login-right ul li:first-child::after{
+    background-color: rgba(102, 102, 102, 0.5); 
+}
+.header-second .header-inner .login-right ul li a{
+    font-size: 14px;
+    color: #666666;
+    font-weight: 900;
+}
+.header-second .header-inner .login-right ul li a img {
+    vertical-align: middle;
+    margin-left: 15px;
+}
+.header-second .header-inner .login-right ul li a .bell-icon{
+    margin-left: 15px;
+    display: inline-block;
+    max-width: 17px;
+    height: 18px;
+}
+.header-second .header-inner .login-right ul li span.count{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #24D4E3;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 10px;
+    text-align: center;
+    line-height: 25px;
+    margin-left: 10px;
+}
+.trading-page .header-second .header-inner .login-right ul li span{
+    background-color: #fff;
+    color: #000;
+}
+/*======= About Banner Styling =======*/
+.about-banner{
+    border-top: 1px solid rgba(151, 151, 151, 0.09);
+    border-bottom: 1px solid rgba(151, 151, 151, 0.09);
+}
+.banner-title {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 0;
+}
+.banner-title h2{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+}
+.banner-title a{
+    background-color: #23D3E3;
+    display: inline-block;
+    color: #fff;
+    max-width: 215px;
+    height: 55px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    line-height: 55px;
+    border-radius: 3px;
+    font-size: 14px;
+    padding-left: 13px;
+    font-weight:  600;
+}
+.banner-title a img{
+    width: 18px;
+    height: 16px;
+    vertical-align: middle;
+    margin-left: 51px;
+}
+/*======= About Banner Styling =======*/
+.about-descripcion-box .text-box{
+    padding-top: 40px;
+    padding-bottom: 88px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.about-descripcion-box .text-box h3{
+    color: #222222;
+    font-size: 10px;
+    font-weight: 700;
+    padding-bottom: 45px; 
+    padding-top: 50px;
+}
+.about-descripcion-box .text-box p{
+    font-size: 14px;
+    color: #999999;
+    font-weight: 600;
+    line-height: 30px;
+}
+.about-descripcion-box .text-box h4{
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 50px;
+    position: relative;
+    padding-top: 30px;
+    margin: 80px 0 85px;
+}
+.about-descripcion-box .text-box h4:after{
+    position: absolute;
+    content: "";
+    background-color: #979797;
+    width: 58px;
+    height: 1px;
+    left: 0;
+    top: 0;
+}
+/*======= Trading Page Styling =======*/
+.trading-page .header{
+    background: #3a66f8;
+    background: -moz-linear-gradient(left, #3a66f8 0%, #24d4e3 100%);
+    background: -webkit-linear-gradient(left, #3a66f8 0%,#24d4e3 100%);
+    background: linear-gradient(to right, #3a66f8 0%,#24d4e3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a66f8', endColorstr='#24d4e3',GradientType=1 );
+}
+.trading-page .header-second .header-inner .navbar-nav .nav-item .nav-link,
+.trading-page .header-second .header-inner .login-right ul li a{
+    color: #FFF;
+}
+.trading-page .header-second .header-inner .login-right ul li:first-child::after{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+/*======= Trading Banner Styling =======*/
+.trading-banner{
+    padding: 55px 0 50px;
+    border-top: 1px solid rgba(151, 151, 151, 0.09);
+}
+.trading-banner-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.trading-banner .title h2{
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    padding-bottom: 15px;
+}
+.trading-banner .title p{
+    font-weight: 400;
+    font-style: italic;
+    color: #999999;
+    font-size: 14px;
+}
+.trading-banner .add-pair{
+    display: flex;
+    align-items: center;
+}
+.trading-banner .form-control{
+    border: 1px solid #E4E4E4;
+    border-radius: 22.5px;
+    background-color: #fff;
+    width: 317px;
+    height: 45px !important;
+    color: #999999;
+    font-size: 14px;
+    background: url(../img/down-arrow.png) 95% center no-repeat;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-right: 60px;
+}
+.trading-banner a{
+    background-color: #23D3E3;
+    border-radius: 3px;
+    min-width: 215px;
+    height: 55px;
+    width: 100%;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    text-align: center;
+    line-height: 55px;
+}
+.trading-banner a img{
+    max-width: 11px;
+    vertical-align: middle;
+    height: 17px;
+    margin-left: 55px;
+}
+.anadir-dropdown{
+    position: relative;
+}
+.anadir-dropdown-box{
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 2px 24px rgba(0, 0, 0, 0.15);
+    position: absolute;
+    right: -30px;
+    top: 72px;
+    width: 482px;
+    padding: 28px 19px 46px 40px;
+    z-index: 10;
+}
+.anadir-dropdown-box-inner {
+    max-height: 343px;;
+}
+.anadir-dropdown-box .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding-right: 60px;
+}
+.anadir-dropdown-box .title h3{
+    color: #222222;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.anadir-dropdown-box .title a{
+    height: 38px;
+    line-height: 38px;
+    min-width: 97px;
+    padding: 0;
+    text-align: center;
+    width: 97px;
+}
+.anadir-dropdown-box ul{
+    margin-top: 17px;
+    padding-right: 60px;
+}
+.anadir-dropdown-box ul li{
+    float: left;
+    width: 33.3%;
+    margin: 30px 0 0;
+}
+.anadir-dropdown-box ul li.active a{
+    border: 2px solid #24D4E3;
+}
+.anadir-dropdown-box ul li.active a span{
+    display: block;
+}
+.anadir-dropdown-box ul li a{
+    background-color: transparent;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    min-width: 100px;
+}
+.anadir-dropdown-box ul li a span {
+    display: none;
+    height: auto;
+    line-height: normal;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+.anadir-dropdown-box ul li a span img {
+    right: 0;
+    width: 14px;
+}
+.anadir-dropdown-box ul li a img{
+    height: auto;
+    margin: 0;
+    max-width: inherit;
+    width: auto;
+}
+/*======= Trading Graph Styling =======*/
+.trading-graph .container-fluid{
+    padding: 0 0;
+}
+.trading-graph-box{
+    border: 1px solid rgba(151, 151, 151, 0.09);
+}
+.trading-graph-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 35px 24px;
+}
+.trading-bitcoin ul li{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.trading-bitcoin ul li:last-child{
+    margin-right: 0;
+    margin-left: 5px;
+}
+.trading-depth a{
+    color: #23D3E3;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    margin: 0 9px;
+}
+.trading-buy ul li{
+    display: inline-block;
+    position: relative;
+    margin-left: 36px;
+}
+.trading-buy li:last-child {
+    margin-left: 25px;
+}
+.trading-buy ul li:first-child{
+    margin-left: 0;
+}
+.trading-buy ul li:first-child:after{
+    position: absolute;
+    content: "";
+    right: -20px;
+    top: 50%;
+    transform: translate(0,-50%);
+    background-color: #979797;
+    width: 1px;
+    height: 10px;
+}
+.trading-buy ul li a img{
+    width: 18px;
+}
+.trading-buy ul li a.buy-sell{
+    background-color: #24D4E3;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 4px;
+    width: 97px;
+    height: 38px;
+    text-align: center;
+    display: inline-block;
+    line-height: 38px;
+}
+.trading-graph-box .image-holder img{
+    width: 100%;
+}
+.trading-dots{
+    display: none;
+}
+/*======= Trading 2 Styling =======*/
+.trading-buttns-inner{
+    display: flex;
+    margin-bottom: 25px;
+}
+.trading-buttns-box {
+    align-items: center;
+    border: 1.5px solid #cccccc;
+    border-radius: 4px;
+    display: flex;
+    opacity: 0.6;
+    max-width: 184px;
+    cursor: pointer;
+    padding: 11px 13px;
+    position: relative;
+    width: 100%;
+}
+.trading-buttns-box.active{
+    opacity: 1;
+    border: 1.5px solid #24D4E3;
+}
+.trading-buttns-box:last-child{
+    margin-right: 0;
+}
+.trading-buttns-box ul{
+    margin-right: 17px;
+}
+.trading-buttns-box ul li{
+    display: inline-block;
+    margin: 0 3px;
+}
+.trading-buttns-box p {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 700;
+}
+.trading-buttns-box p span{
+    color: #24D4E3;
+    font-size: 12px;
+    font-weight: 400;
+    display: block;
+    font-style: italic;
+    margin-top: 7px;
+}
+.trading-buttns-box p span img{
+    position: relative;
+    top: 3px;
+    width: 7px !important;
+    display: inline-block !important;
+}
+.cross-icon{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.cross-icon img{
+    width: 8px !important;
+}
+.trading-buttns-box p.error span{
+    color: #E3235F;
+}
+/*======= Order Book Modal Styling =======*/
+.login-modal-top{
+    padding: 20px;
+    display: flex;
+    display: none;
+    justify-content: space-between;
+}
+.login-modal-top .logo img{
+    max-width: 79px;
+    height: 17px;
+}
+.order-book-modal .modal-body  .login-modal-top .close{
+    position: static;
+}
+.order-book-modal .modal-body  .login-modal-top .close img {
+    filter: inherit;
+    height: 11px;
+    width: 11px;
+}
+.order-book-modal .modal-dialog{
+    max-width: 880px;
+    margin: 60px auto;
+}
+.order-book-modal .modal-content{
+    border-radius: 6px;
+    border: medium none;
+}
+.order-book-modal .modal-body{
+    padding: 60px 90px 43px;
+}
+.order-book-modal .modal-body .close{
+    opacity: 1;
+    position: absolute;
+    right: 2px;
+    text-shadow: inherit;
+    top: -30px;
+    cursor: pointer;
+}
+.order-book-modal .modal-body .close img{
+    width: 11px;
+    height: 11px;
+    filter: brightness(600%);
+}
+.order-book-modal .modal-body .title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 42px;
+}
+.order-book-modal .modal-body .title h3{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+}
+.order-book-modal .modal-body .title p{
+    color: #999999;
+    font-size: 14px;
+    font-style: italic;
+    margin: 8px 0 0 0;
+}
+.order-book-modal .modal-body .title p span{
+    color: #333333;
+    display: inline-block;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 300;
+    margin: -6px 0 0 28px;
+    vertical-align: top;
+}
+.order-book-modal .modal-body .title p span img{
+    height: 14px;
+    margin-right: 16px;
+    position: relative;
+    top: 8px;
+    vertical-align: top;
+    width: 11px;
+}
+.order-book-box table{
+    width: 100%;
+}
+.order-book-box table thead tr th{
+    color: #222222;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 1px solid #E1E1E1;
+    padding: 17px 30px 36px;
+}
+.order-book-box table tbody tr{
+    position: relative;
+}
+.order-book-box table tbody tr td{
+    color: #666666;
+    font-size: 14px; 
+    text-transform: uppercase;
+    border-bottom: 1px solid #E1E1E1;
+    padding: 15px 28px 18px;
+}
+.order-book-box table tbody tr td:first-child{
+    color: #E3235F;
+    border-left: 2px solid #E1E1E1;
+}
+.order-book-box table tbody tr td:last-child{
+    border-right: 1px solid #E1E1E1;
+}
+.order-book-box.order-book-box-second tbody tr td:first-child{
+    color: #24D4E3;
+}
+.order-book-box.order-book-box-second table tbody tr:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    content: "";
+    height: 100%;
+    background-color: rgba(36, 212, 227, 0.10);
+}
+.order-book-box table tbody tr:after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 92%;
+    content: "";
+    height: 100%;
+    background-color: rgba(227, 35, 95, 0.10);
+}
+.order-book-box table tbody tr:nth-child(2):after{
+    width: 82%;
+}
+.order-book-box table tbody tr:nth-child(3):after{
+    width: 72%;
+}
+.order-book-box table tbody tr:nth-child(4):after{
+    width: 62%;
+}
+.order-book-box table tbody tr:nth-child(5):after{
+    width: 52%;
+}
+.order-book-box table tbody tr:nth-child(6):after{
+    width: 42%;
+}
+.order-book-box table tbody tr:nth-child(7):after{
+    width: 35%;
+}
+.order-book-box table tbody tr:nth-child(8):after{
+    width: 30%;
+}
+.order-book-box table tbody tr:nth-child(9):after{
+    width: 25%;
+}
+.order-book-box table tbody tr:nth-child(10):after{
+    width: 20%;
+}
+
+
+.order-book-box.order-book-box-second table tbody tr:nth-child(10):after{
+    width: 92%;
+}
+.order-book-box.order-book-box-second table tbody tr:nth-child(9):after{
+    width: 82%;
+}
+.order-book-box.order-book-box-second table tbody tr:nth-child(8):after{
+    width: 72%;
+}
+.order-book-box.order-book-box-second table tbody tr:nth-child(7):after{
+    width: 62%;
+}
+.order-book-box.order-book-box-second table tbody tr:nth-child(6):after{
+    width: 52%;
+}
+.order-book-box.order-book-box-second table tbody tr:nth-child(5):after{
+    width: 42%;
+}
+.order-book-box.order-book-box-second table tbody tr:nth-child(4):after{
+    width: 35%;
+}
+.order-book-box.order-book-box-second table tbody tr:nth-child(3):after{
+    width: 30%;
+}
+.order-book-box.order-book-box-second table tbody tr:nth-child(2):after{
+    width: 25%;
+}
+/*======= Buy Sell Modal Styling =======*/
+.buy-sell-modal .modal-dialog {
+    margin: 60px auto;
+    max-width: 970px;
+}
+.buy-sell-modal .modal-body{
+    padding: 0;
+}
+.buy-sell-sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 52px;
+    border-bottom: 1px solid rgba(151, 151, 151, 0.20);
+}
+.buy-sell-sort .buy-sell-sort-left .form-control{
+    border: 1px solid #E4E4E4;
+    background-color: #fff;
+    border-radius: 22.5px;
+    width: 175px;
+    height: 45px !important;
+    color: #999999;
+    font-size: 14px;
+    margin-right: 10px;
+    display: inline-block;
+    font-weight: 400;
+    background: url(../img/down-arrow.png) 84% center no-repeat;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.buy-sell-sort-right p{
+    color: #222222;
+    font-size: 10px;
+    font-weight: 700;
+    display: inline-block;
+}
+.buy-sell-sort-right p span{
+    color: #999999;
+    font-size: 14px;
+    display: inline-block;
+    padding-left: 26px;
+}
+.buy-sell-sort-right a{
+    background-color: #23D3E3;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #fff;
+    width: 225px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-left: 50px;
+}
+.buy-sell-sort-right a img{
+    width: 26px;
+    vertical-align: middle;
+    margin-left: 100px;
+}
+/*======= Buy Detail Styling =======*/
+.buy-detail-box{
+    padding: 28px 37px 30px 57px;
+}
+.buy-detail-box .hedding{
+    margin: 0;
+    text-align: left;
+}
+.buy-detail-box .hedding h3{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 900;
+}
+.buy-detail-box .hedding h3 span{
+    color: #999999;
+    display: inline-block;
+    float: right;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 4px 0 0;
+    vertical-align: middle;
+}
+.buy-detail-unit {
+    margin-top: 33px;
+}
+.buy-detail-unit-box {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.buy-detail-unit-box label{
+    color: #333333;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    width: 72px;
+}
+.buy-detail-unit-box .form-control{
+    border: 1px solid #E4E4E4;
+    border-radius: 4px;
+    width: 123px;
+    height: 38px;
+    color: #333333;
+    font-size: 15px;
+    margin: 0 10px;
+}
+.buy-detail-unit-box span{
+    color: #999999;
+    font-size: 14px;
+    font-weight: 400;
+}
+.buy-detail-discount ul{
+    display: flex;
+    justify-content: space-between;
+}
+.buy-detail-discount ul li a{
+    color: #999999;
+    font-size: 14px;
+    border: 1px dashed #24D4E3;
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+    width: 52px;
+    height: 38px;
+    line-height: 38px;
+}
+.buy-detail-discount ul li.active a{
+    border: 2px solid #24D4E3;
+    color: #333333;
+}
+.buy-detail-traling{
+    border-bottom: 1px dashed #000000;
+    border-top: 1px dashed #000000;
+    margin: 30px 0 0;
+    padding: 30px 0;
+}
+.traling-top{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.traling-top h3{
+    color: #999999;
+    font-size: 14px;
+    font-weight: 400;
+}
+.traling-top h3 img{
+    height: 20px;
+    margin-left: 15px;
+    vertical-align: middle;
+    width: 20px;
+}
+.buy-detail-discount {
+    min-height: 38px;
+}
+/* switch sliders */
+.switch {
+    display: inline-block;
+    height: 22px;
+    position: relative;
+    width: 37px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    background-color: #ffffff;
+    bottom: 2px;
+    content: "";
+    height: 18px;
+    left: 3px;
+    position: absolute;
+    transition: all 0.4s ease 0s;
+    width: 18px;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+.buy-traling-botom {
+    display: flex;
+}
+.buy-traling-botom .form-control{
+    border: 1px solid #E4E4E4;
+    height: 38px;
+    color: #333333;
+    font-size: 15px;
+    width: 155px;
+    background-color: transparent;
+    border-radius: 4px 0 0 4px;
+}
+.buy-traling-botom select{
+    border: 1px solid #E4E4E4;
+    height: 38px !important;
+    color: #333333;
+    font-size: 15px;
+    border-radius: 0 4px 4px 0;
+    width: 82px;
+    padding-left: 15px;
+    background: url(../img/down-arrow.png) 84% center no-repeat;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-left: none;
+}
+/* Radio Buttons */
+.buy-alarm{
+    padding: 30px 0;
+}
+.buy-alarm li {
+    margin-bottom: 15px;
+}
+.buy-alarm [type="radio"]:checked,
+.buy-alarm [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.buy-alarm [type="radio"]:checked + label,
+.buy-alarm [type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+.buy-alarm [type="radio"]:checked + label:before,
+.buy-alarm [type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 0.9px solid #CCCCCC;
+    border-radius: 100%;
+    background: #fff;
+}
+.buy-alarm [type="radio"]:checked + label:after,
+.buy-alarm [type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: #23D3E3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.buy-alarm [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.buy-alarm [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.buy-alarm ul li label{
+    color: #999999;
+    font-size: 14px;
+    font-weight: 400;
+}
+.buy-alarm ul li label span{
+    border: 1px solid #E4E4E4;
+    border-radius: 4px;
+    display: inline-block;
+    width: 19px;
+    height: 26px;
+    text-align: center;
+}
+.buy-post{
+    border-top: 1px dashed #000000;
+    padding-bottom: 0;
+}
+.buy-post ul{
+    display: flex;
+    justify-content: space-between;
+}
+.buy-post .form-control{
+    border: 1px solid #24D4E3;
+    border-radius: 4px;
+    color: #999999;
+    font-size: 14px;
+    width: 100%;
+    height: 38px !important;
+    background: url(../img/down-arrow.png) 90% center no-repeat;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-top: 3px;
+}
+.buy-detail-box-second{
+    background-color: rgba(36, 212, 227, 0.08);
+    padding-left: 37px;
+}
+.buy-detail-discount .buy-alarm{
+    padding: 0;
+}
+.buy-detail-discount .buy-alarm li{
+    margin-bottom: 0;
+}
+.buy-detail-thrd{
+    padding-left: 37px;
+}
+.buy-detail-thrd .buy-detail-discount .buy-alarm{
+    min-height: auto;
+}
+.buy-detail-thrd .buy-alarm{
+    min-height: 136px;
+}
+/*======= Buy Sell Modal Styling =======*/
+.buy-sell-Volver{
+    padding: 20px;
+}
+.buy-sell-Volver a{
+    color: #23D3E3;
+    font-size: 14px;
+    font-style: italic;
+}
+.buy-sell-Volver a img{
+    vertical-align: middle;
+    margin-right: 10px
+}
+.buy-sell-tabss .nav-pills{
+    display: none;
+}
+.buy-sell-tabss select.form-control{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #ffffff url("../img/down-arrow.png") no-repeat scroll 96% center;
+    border: 1px solid rgba(151, 151, 151, 0.20);
+    color: #333333;
+    font-family: "Lato",sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 60px !important;
+    padding: 0 15px;
+}
+.buy-alarm.buy-post a {
+    background-color: #23d3e3;
+    border-radius: 3px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 0;
+    text-align: left;
+    width: 100%;
+    margin-top: 30px;
+    padding: 0 40px;
+    position: relative;
+}
+.buy-alarm.buy-post a img{
+    margin-left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    right: 40px;
+    vertical-align: middle;
+    width: 26px;
+}
+/*======= Social Network Styling =======*/
+.social-network-banner{
+    background: url(../img/socail-network-logo.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 164px 0 113px;
+}
+.social-network-banner .text-box{
+    text-align: center;
+}
+.social-network-banner .text-box h1{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 30px;
+    line-height: 50px;
+}
+.social-network-banner .text-box p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+.socail-authors{
+    background-color: #fff;
+    padding: 20px 0 38px;
+}
+.socail-authors-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 31px;
+}
+.socail-authors-top h3{
+    color: #333333;
+    font-size: 10px;
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+}
+.socail-authors-top .nav-pills .nav-item {
+    margin-left: 27px;
+}
+.socail-authors-top .nav-pills .nav-item .nav-link{
+    color: rgba(51, 51, 51, 0.5);
+    font-size: 10px;
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+    padding: 0 0 5px 0;
+    border-radius: 0;
+
+    border-bottom: 2px solid transparent;
+}
+.socail-authors-top .nav-pills .nav-link.active, .socail-authors-top .nav-pills .show > .nav-link{
+    background-color: transparent;
+    color: #333;
+    border-bottom: 2px solid #24D4E3;
+}
+.socail-authors-box{
+    display: flex;
+    align-items: center;
+}
+.socail-authors-box .text-box {
+    padding-left: 24px;
+}
+.socail-authors-box .text-box h4{
+    color: #333333;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+}
+.socail-authors-box .text-box span{
+    display: inline-block;
+    background-color: #3A66F8;
+    border-radius: 12px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 8px;
+    font-weight: 900;
+    width: 44px;
+    height: 20px;
+    margin-left: 15px;
+    text-align: center;
+    line-height: 20px;
+}
+.socail-authors-box .text-box ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13px;
+}
+.socail-authors-box .text-box ul li{
+    color: #999999;
+    font-size: 13px;
+    font-weight: 400;
+    margin-right: 13px;
+}
+.socail-authors-box .text-box ul li img{
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.socail-publicar {
+    padding: 40px 0 130px;
+}
+.socail-publicar-top {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.socail-publicar-top select.form-control{
+    color: #666666;
+    font-size: 14px;
+    border-radius: 22.5px;
+    width: 240px;
+    height: 45px !important;
+    border: none;
+    background: #fff url(../img/down-arrow.png) 90% center no-repeat;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.socail-publicar-top p{
+    color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+}
+.socail-publicar-top p a{
+    background-color: #23D3E3;
+    width: 43px;
+    height: 43px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 43px;
+    margin-left: 20px;
+    display: inline-block;
+}
+.socail-publicar-top p a img{
+    width: 13px;
+    height: 13px;
+}
+.socail-thunder {
+    margin-top: 50px;
+}
+.socail-thunder-box{
+    background-color: #fff;
+    border-radius: 4px;
+    margin-bottom: 40px;
+}
+.socail-thunder-box .image-holder img{
+    width: 100%;
+}
+.socail-thunder-textinner {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 30px 37px
+}
+
+.socail-thunder-box .text-box .socail-thunder-textinner .socail-thunder-head img{
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 6px;
+}
+.socail-thunder-box .text-box .socail-thunder-textinner .socail-thunder-head h4{
+    color: #333333;
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    display: inline-block;
+}
+.socail-thunder-box .text-box .socail-thunder-textinner a{
+    color: #24D4E3;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 17px;
+}
+.socail-thunder-box .text-box h3{
+    color: #333333;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    padding: 0 30px;
+}
+.socail-thunder-box .text-box p{
+    color: #999999;
+    font-size: 15px;
+    line-height: 30px;
+    padding: 0 30px 28px;
+}
+.socail-thunder-box .text-box ul{
+    border-top: 1px solid rgba(204, 204, 204, 0.60);
+    padding: 17px 0;
+}
+.socail-thunder-box .text-box ul li {
+    float: left;
+    width: 33.3%;
+    text-align: center;
+}
+.socail-thunder-box .text-box ul li a{
+    color: #999999;
+    font-size: 13px;
+    font-weight: 400;
+    display: inline-block;
+    padding: 9px 0;
+}
+.socail-thunder-box .text-box ul li a img{
+    margin-right: 15px;
+}
+.socail-thunder-box .text-box ul li a.like-btn{
+    background-color: #24D4E3;
+    border-radius: 4px; 
+    color: #fff;
+    width: 87px;
+    height: 33px;
+    padding: 0;
+    text-align: center;
+    line-height: 33px;
+}
+.socail-thunder-box .text-box ul li a.like-btn img{
+    filter: brightness(1000%);
+}
+.more-button{
+    text-align: center;
+    margin-top: 85px;
+}
+.more-button a{
+    color: #fff;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: #24D4E3;
+    width: 180px;
+    height: 55px;
+    line-height: 55px;
+    display: inline-block;
+    text-align: center;
+}
+/*======= Trading Copy Styling =======*/
+.trading-copy-banner{
+    background: url(../img/trading-copy-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.trading-copy-top-main{
+    padding: 28px 0;
+    background-color: #fff;
+}
+.trading-copy-top {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+} 
+.trading-copy-top .trading-copy-top-left .form-control{
+    border: 1px solid #E4E4E4;
+    height: 45px !important;
+    width: 327px;
+    display: inline-block;
+    color: #333333;
+    font-size: 10px;
+    border-radius: 22.4px;
+    font-weight: 700;
+    background: #fff url(../img/down-arrow.png) 90% center no-repeat;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-right: 43px;
+}
+.trading-copy-top .trading-copy-top-left .form-control:last-child{
+    margin-right: 0;
+}
+.trading-copy-top .trading-copy-top-rigth {
+    position: relative;
+}
+.trading-copy-top .trading-copy-top-rigth .form-control{
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    color: #999999;
+    font-size: 14px;
+    font-style: italic;
+    border-left: 1px solid #979797;
+    height: 23px;
+    width: 190px;
+    background-color: transparent;
+}
+.trading-copy-top .trading-copy-top-rigth a {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.trading-copy-top .trading-copy-top-rigth a img{
+    width: 22px;
+    height: 22px;
+}
+.trading-copy-detail{
+    padding-bottom: 130px; 
+    padding-top: 18px;
+}
+.trading-copy-detail table{
+    width: 100%;
+}
+.trading-copy-detail table thead tr th{
+    color: #222222;
+    font-size: 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    padding: 30px 35px;
+
+}
+.trading-copy-detail table thead tr th:first-child{
+    text-align: center;
+}
+.trading-copy-detail table tbody tr td{
+    color: #333333;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    border-bottom: 1px solid #F7F7F7;
+    background-color: #fff;
+    padding: 30px 40px 25px;
+}
+.trading-copy-detail table tbody tr td .image-holder{
+    display: inline-block;
+    vertical-align: middle;
+}
+.trading-copy-detail table tbody tr td .text-box{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 27px;
+}
+.trading-copy-detail table tbody tr td .text-box h4{
+    color: #333333;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+}
+.trading-copy-detail table tbody tr td a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #24D4E3;
+    width: 87px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 4px;
+}
+.trading-copy-detail table tbody tr td p{
+    color: #666666;
+    font-size: 12px;
+    font-style: italic;
+}
+.trading-copy-detail table tbody tr td p img {
+    height: 9px;
+    width: 7px;
+    position: relative;
+    top: 4px;
+    margin-right: 4px;
+    margin-left: 10px;
+}
+.pagination{
+    justify-content: center;
+    margin-top: 72px;
+}
+.pagination ul{
+    align-items: center;
+    display: flex;
+}
+.pagination ul li a{
+    color: #222222;
+    font-size: 10px;
+    font-weight: 700;
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+}
+.pagination ul li.active a{
+    border: 1px solid #23D3E3;
+}
+.pagination ul li.left-arrow {
+    margin-right: 63px;
+}
+.pagination ul li.right-arrow {
+    margin-left: 45px;
+}
+/*======= Trading Copy Modal Styling =======*/
+.trading-modal-wave{
+    border-bottom: 1px solid rgba(151, 151, 151, 0.3);
+    padding-bottom: 35px;
+}
+.trading-modal-wave .hedding{
+    text-align: left;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.trading-modal-wave .hedding .image-holder img{
+    display: inline-block;
+    vertical-align: middle;
+}
+.trading-modal-wave .hedding .image-holder h3{
+    color: #000000;
+    display: inline-block;
+    font-family: "Lato",sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 15px;
+    vertical-align: middle;
+}
+.trading-modal-wave .hedding span{
+    color: #24D4E3;
+    display: inline-block;
+    font-size: 14px;
+}
+.trading-modal-wave .hedding span a{
+    background-color: #24d4e3;
+    border-radius: 4px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    width: 87px;
+    margin-left: 30px;
+}
+.trading-modal-wave p{
+    color: #999999;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 500px;
+}
+.trading-modal-wave .form-control{
+    background: #fff url(../img/down-arrow.png) 90% center no-repeat;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #e4e4e4;
+    border-radius: 22.4px;
+    color: #333333;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    height: 45px !important;
+    margin-right: 0;
+    margin: 43px 0;
+    width: 327px;
+}
+.trading-modal-wave table{
+    width: 100%;
+}
+.trading-modal-wave table thead tr th{
+    color: #222222;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 15px 0;
+}   
+.trading-modal-wave table tbody tr td{
+    color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 15px 0;
+}   
+.trading-modal-wave table tbody tr td p {
+    color: #666666;
+    font-size: 12px;
+    font-style: italic;
+}
+.trading-modal-wave table tbody tr td p img {
+    height: 9px;
+    margin-left: 10px;
+    margin-right: 4px;
+    position: relative;
+    top: 4px;
+    width: 7px;
+}
+.trading-modal-transacciones {
+    padding-top: 55px;
+}
+.trading-modal-transacciones h3{
+    color: #000000;
+    font-family: "Lato",sans-serif;
+    font-size: 16px;
+    margin-bottom: 17px;
+}
+
+.trading-modal-transacciones table{
+    width: 100%;
+}
+.trading-modal-transacciones table thead tr th{
+    font-size: 10px;
+    font-family: "Lato",sans-serif;
+    font-weight: 700;
+    padding: 25px 11px;
+}
+.trading-modal-transacciones table tbody tr {
+    border: 1px solid #e1e1e1; 
+}
+.trading-modal-transacciones table tbody tr td{}
+.trading-modal-transacciones table tbody tr td{ 
+    color: #666666;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 25px 11px;
+}  
+.trading-modal-transacciones table tbody tr td p {
+    color: #666666;
+    font-size: 12px;
+    font-style: italic;
+}
+.trading-modal-transacciones table tbody tr td p img {
+    height: 9px;
+    margin-left: 10px;
+    margin-right: 4px;
+    position: relative;
+    top: 4px;
+    width: 7px;
+}
+/*======= News Page Styling =======*/
+
+.news-page .header{
+    position: static;
+    background-color: #fff;
+}
+.news-page .header-inner .header-logo img{
+    width: 88px;
+    height: 19px;
+}
+.news-page .header-inner .navbar-nav .nav-item .nav-link{
+    color: #666666;
+}
+.news-page .header-inner .navbar-nav .nav-item .nav-link::after{
+    background-color: #24D4E3;
+}
+.news-page .header-inner .login-right ul li a img{
+    width: 15px;
+    height: 15px;
+}
+.news-page .header-inner .login-right ul li:first-child::after{
+    background-color: rgba(102, 102, 102, 0.52);
+}
+.news-page .header-inner .login-right ul li a{
+    color: #666;
+}
+.news-page .header-inner .login-right ul li.registrate-btn a{
+    border: 1px solid #24D4E3;
+}
+.news-banner{
+    text-align: center;
+    padding-top: 108px;
+    padding-bottom: 30px;
+}
+.news-banner .news-banner-inner h2{
+    color: #333333;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 33px;
+}
+.news-banner .news-banner-inner p{
+    color: #999999;
+    font-size: 16px;
+    font-weight: 400;
+}
+.news-info-sec{
+    padding-bottom: 130px;
+}
+.news-info-filter {
+    padding: 80px 0 50px;
+}
+.news-info-filter .trading-copy-top .trading-copy-top-left .form-control{
+    border: none;
+    font-size: 14px;
+    color: #666666;
+    font-weight: 400;
+    margin-right: 35px;
+    width: 240px;
+
+}
+.news-detail-box{
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+.news-detail-box .image-holder img{
+    width: 100%;
+}
+.news-detail-box .text-box{
+    padding: 20px 30px 28px; 
+}
+.news-detail-box .text-box span{
+    color: #999999;
+    font-size: 14px;
+    font-style: italic;
+}
+.news-detail-box .text-box h3{
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    padding: 14px 0 40px;
+}
+.news-detail-box .text-box p{
+    color: #999999;
+    font-size: 14px;
+    font-style: italic;
+}
+/*======= News Info Filt mobile Styling =======*/
+.news-info-mobile {
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    padding: 25px 0;
+    display: none;
+}
+.news-info-mobile ul li{
+    float: left;
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+.news-info-mobile ul li:first-child:after{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background-color: #979797;
+    width: 1px;
+    height: 100%;
+}
+/*======= Pricing Page Styling =======*/
+.pricing-page {
+    margin-top: 25px;
+    padding-bottom: 130px;
+}
+.pricing-inner .nav {
+    display: flex;
+    justify-content: center;
+    max-width: 710px;
+    margin: 0 auto;
+}
+.pricing-inner .nav .nav-item{
+    width: 50%;
+    text-align: center;
+}
+.pricing-inner .nav .nav-item .nav-link{
+    color: #999999;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0;
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 27px;
+    border-radius: 0;
+    position: relative;
+}
+.pricing-inner .nav .nav-item .nav-link:after{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -1px;
+    background-color: #23D3E3;
+    width: 0;
+    height: 2px;
+    transition: all 0.5s ease-in-out;
+}
+.pricing-inner .nav .nav-item .nav-link.active{
+    background-color: transparent;
+    color: #000000;
+}
+.pricing-inner .nav .nav-item .nav-link.active:after{
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+.pricing-detail{
+    padding-top: 106px;
+}
+.pricing-box {
+    background-color: #ffffff;
+    border: 4px none;
+    min-height: 620px;
+    padding-bottom: 50px;
+    padding-top: 40px;
+    text-align: center;
+}
+.pricing-box p{
+    text-align: center;
+    letter-spacing: 1px;
+    color: #333333;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+.pricing-box  h4{
+    color: #333333;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 100px;
+    position: relative;
+    display: inline-block;
+}
+.pricing-box h4 small{
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: -13px;
+    transform: translate(0,-50%); 
+}
+.pricing-box h4 span{
+    bottom: -9px;
+    font-family: "Open Sans",sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    position: absolute;
+    right: -23px;
+}
+.pricing-box ul{
+    text-align: left;
+    padding-left: 37px;
+    padding-top: 87px;
+    padding-bottom: 40px;
+}
+.pricing-box ul li{
+    color: #333333;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    position: relative;
+    line-height: 30px;
+    padding-left: 51px;
+}
+.pricing-box ul li:last-child{
+    margin-bottom: 0;
+}
+.pricing-box ul li:after{
+    background: rgba(0, 0, 0, 0) url("../img/checkmark-icon.svg") no-repeat scroll 0 0;
+    content: "";
+    height: 10px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0px, -50%);
+    width: 14px;
+}
+.pricing-box ul li.cross-red:after{
+    background: rgba(0, 0, 0, 0) url("../img/cross-red.svg") no-repeat scroll 0 0;
+}
+.pricing-box a{
+    color: #fff;
+    font-size: 14px;
+    background-color: #24D4E3;
+    border-radius: 4px;
+    width: 180px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    display: inline-block;
+}
+.pricing-page .trading-copy-detail{
+    padding-bottom: 0;
+}
+/*======= Portfolio Page Styling =======*/
+.trading-page .trading-banner{
+    background-color: #fff;
+}
+.portfolio-sort {
+    background-color: #ffffff;
+    padding-bottom: 30px;
+    padding-top: 0;
+}
+.portfolio-sort-box{
+    position: relative;
+}
+.portfolio-sort-box .form-control{
+    border: 1px solid #E4E4E4;
+    border-radius: 22.5px;
+    background-color: #fff;
+    width: 100%;
+    height: 45px !important;
+    color: #999999;
+    font-size: 14px;
+}
+.portfolio-sort-box select.form-control{
+    background: url(../img/down-arrow.png) 95% center no-repeat;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.portfolio-sort-box span{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(0,-50%);
+}
+.portfolio-sort-box span img{
+    width: 16px;
+}
+/*======= Portfolio Mobile sort togggle Styling =======*/
+.portfolio-sort-toggle a{
+    color: #999999;
+    font-size: 14px;
+    display: block;
+}
+.portfolio-sort-toggle a img{
+    vertical-align: middle;
+    float: right;
+}
+/*======= Portfolio Holding Styling =======*/
+.portfolio-sec{
+    padding: 60px 0;
+}
+
+.portfolio-holding-box{
+    background-color: #fff;
+    text-align: center;
+    padding: 30px 35px 45px 35px;
+}
+.portfolio-holding-box h3{
+    color: #333333;
+    font-size: 45px;
+    font-weight: 300;
+    font-family: "Lato",sans-serif;
+}
+.portfolio-holding-box h3 img{
+    width: 11px;
+    height: 14px;
+    vertical-align: middle;
+    margin-right: 2px;
+}
+.portfolio-holding-box span{
+    font-size: 14px;
+    color: #999999;
+    font-style: italic;
+    display: block;
+    padding-top: 8px;
+}
+.portfolio-holding-box.border-box{
+    border-top: 2px solid #23D3E3;
+}
+.portfolio-quantity{
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 30px 35px;
+    margin: 100px 0;
+}
+.portfolio-quantity h3{
+    color: #000000;
+    font-size: 16px;
+    font-family: "Lato",sans-serif;
+    margin-bottom: 30px;
+}
+.portfolio-quantity .text-box{
+    padding: 106px 0 0 114px;
+    position: relative;
+}
+.portfolio-quantity .text-box:after{
+    position: absolute;
+    content: "";
+    background-color: rgba(151, 151, 151, 0.4);
+    width: 1px;
+    height: 157px;
+    right: 104px;
+    top: 88px;
+}
+.portfolio-quantity .text-box ul{
+    max-width: 180px;
+}
+.portfolio-quantity .text-box ul li{
+    color: rgba(34, 34, 34, 0.60);
+    font-size: 10px;
+    font-weight: 700;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 29px;
+}
+.portfolio-quantity .text-box ul li span{
+    float: right;
+}
+.portfolio-quantity .text-box ul li:after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+    width: 8px;
+    height: 8px;
+    background-color: #23D3E3;
+    border-radius: 50%;
+}
+.portfolio-quantity .text-box ul li:nth-child(2):after{
+    background-color: #3866F7;
+}
+.portfolio-quantity .text-box ul li:nth-child(3):after{
+    background-color: #53A8E2;
+}
+.portfolio-quantity .text-box ul li:nth-child(4):after{
+    background-color: #DBECF8;
+}
+.transaction-history-titile {
+    text-align: center;
+    padding-bottom: 102px;
+}
+.transaction-history-titile h2{
+    color: #333333;
+    font-size: 30px;
+    font-weight: 400; 
+}
+.transaction-history-inner .trading-copy-detail{
+    padding-top: 0;
+}
+.transaction-history-inner .trading-copy-detail table thead tr th{
+    padding-top: 0;
+}
+.transaction-history-inner .trading-copy-detail table tr td{
+    font-size: 14px;
+    color: #666;
+}
+.transaction-history-inner .trading-copy-detail table tr td span {
+
+    border-radius: 50px;
+    color: #ffffff;
+    display: block;
+    font-size: 8px;
+    font-weight: 900;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+
+}
+.transaction-history-inner .trading-copy-detail table tr#hidden_row td span {
+    color: #666666;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    text-align: left;
+    margin-top: 21px;
+}
+.transaction-history-inner .trading-copy-detail table tr#hidden_row td p{
+    color: #222222;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+}
+.buy-blue{
+    background-color: #24d4e3;
+}
+.buy-red{
+    background-color: #E3235F;
+}
+.buy-perpal{
+    background-color: #3A66F8;
+}
+.buy-gray{
+    background-color: #CCCCCC;
+}
+.transaction-history-inner .trading-copy-detail table tbody tr td{
+    padding: 25px 28px;
+}
+.transaction-history-inner .trading-copy-detail table tbody tr td:last-child{
+    cursor: pointer;
+}
+.transaction-history-inner .trading-copy-detail table tbody tr td.active img{
+    transform: rotate(180deg);
+}
+.transaction-history-inner .trading-copy-detail table tr td ul li{
+    display: inline-block;
+    list-style: none;
+    vertical-align: middle;
+    margin-left: 25px;
+}
+.transaction-history-inner .trading-copy-detail table tr td ul{
+    text-align: right;
+}
+.transaction-history-inner .trading-copy-detail table tr td ul li a{
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    line-height: inherit;
+    padding: 0;
+}
+/*======= Login Modal Styling =======*/
+.trading-copy-mobile-box{
+    background-color: #fff; 
+    margin-top: 30px;
+}
+.trading-copy-mobile-box .trading-mobile-title {
+    border-bottom: 1px solid rgba(151, 151, 151, 0.2);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.trading-copy-mobile-box .trading-mobile-title span{
+    display: inline-block;
+    width: 85px;
+    height: 20px;
+    background-color: #24D4E3;
+    border-radius: 22.5px;
+    text-align: center;
+    color: #fff;
+    line-height: 20px;
+    font-size: 8px;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+.trading-copy-mobile-box .trading-mobile-title p{
+    color: #666666;
+    font-size: 14px;
+}
+.trading-copy-mobile-inner{
+    padding: 20px;
+}
+.trading-copy-mobile-inner h4{
+    color: #222222;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    margin-bottom: 18px;
+}
+.trading-copy-mobile-inner p{
+    color: #666666;
+    font-size: 14px;
+}
+.trading-copy-mobile-inner .mb-3{
+    margin-top: 42px;
+}
+/*======= Login Modal Styling =======*/
+.login-modal .modal-body{
+    padding: 0;
+}
+.login-modal-inner{
+    display: flex;
+}
+.login-modal-left{
+    width: 50%;
+    padding: 66px 82px 33px;
+}
+.login-modal-left h3{
+    color: #000000;
+    font-size: 20px;
+    font-family: "Lato",sans-serif;
+    font-weight: 700;
+    margin-bottom: 53px;
+}
+.login-modal-left p{
+    color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 55px;
+}
+.login-modal-left .form-group{
+    margin-bottom: 36px;
+}
+.login-modal-left .form-group label{
+    color: #222222;
+    font-size: 10px;
+    font-family: "Lato",sans-serif;
+    display: block;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+.login-modal-left .form-group label a{
+    color: #23D3E3;
+    font-size: 14px;
+    float: right;
+    font-weight: 400;
+    font-style: italic;
+}
+.login-modal-left .form-group .form-control{
+    border: 1px solid #E4E4E4;
+    border-radius: 22.5px;
+    height: 45px;
+    width: 100%;
+    color: #999999;
+    font-size: 14px;
+    font-family: "Lato",sans-serif; 
+    font-weight: 400;
+}
+.login-modal-left .form-group .btn-defult{
+    background-color: #23D3E3;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: "Lato",sans-serif; 
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-top: 60px
+}
+.login-modal-left .form-group .btn-defult img{
+    vertical-align: middle;
+    margin-left: 110px;
+}
+.login-modal-rigth{
+    background: rgba(0, 0, 0, 0) url("../img/login-bg.png") no-repeat scroll 0 0;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 50%;
+    padding: 64px 93px;
+}
+.login-modal-rigth h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Lato",sans-serif; 
+    padding-bottom: 30px;
+}
+.login-modal-rigth p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Lato",sans-serif;
+    color: #FFF;
+    line-height: 26px;
+}
+.login-modal-rigth a{
+    background-color: transparent;
+    border: 1px solid #fff;;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: "Lato",sans-serif; 
+    font-weight: 400;
+    color: #fff !important;
+    text-align: center;
+    display: block;
+    height: 55px;
+    line-height: 55px;
+    width: 100%;
+    margin-top: 65px
+}
+.login-modal-rigth a img{
+    vertical-align: middle;
+    margin-left: 110px;
+}
+.recover-password .login-modal-left h3 {
+    margin-bottom: 35px;
+    position: relative;
+}
+.recover-password .login-modal-left h3 a{
+    position: absolute;
+    left: -30px;
+    top: -2px;
+}
+.new-password span{
+    display: block;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+    margin: 28px 0 38px;
+}
+.new-password a{
+    color: #23D3E3;
+    display: block; 
+    font-size:14px;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 158px;
+}
+.registor-modal .modal-body{
+    padding: 0;
+}
+.registor-modal .login-modal-left{
+    width: 100%;
+    padding: 46px 94px 33px;
+}
+.registor-modal .login-modal-left .form-group label small{
+    color: #E33623;
+    font-size: 10px;
+    padding-left: 5px;
+}
+.registor-modal .login-modal-left .form-group .form-control{
+    width: 276px;
+}
+.registor-modal .login-modal-left .form-group {
+    margin-bottom: 28px;
+}
+.registor-modal .login-modal-left .form-group .btn-defult{
+    margin-top: 77px;
+    width: 255px;
+}
+.registor-modal .login-modal-left .form-group span{
+    color: #999999;
+    font-size: 14px;
+    vertical-align: middle;
+    font-style: italic;
+    padding-left: 16px;
+}
+.registor-modal .login-modal-left .form-group span a{
+    color: #23D3E3;
+}
+.registor-modal .cheack-boxs{
+    margin-top: 92px;
+}
+/*======= Panel Admin Page Styling =======*/
+.paneladmin-page .trading-banner a{
+    max-width: 215px;
+    background-color: transparent;
+    color: #24D4E3;
+    font-size: 14px;
+    margin-left: 35px;
+}
+.paneladmin-page .trading-banner a img {
+    height: 13px;
+    margin-left: 55px;
+    max-width: 16px;
+}
+.panel-administrac-inner {
+    display: inline-block;
+}
+.paneladmin-page .trading-banner a.editar-mis{
+    border: 1px solid #24D4E3;
+    color: #333333;
+    margin-left: 8px;
+}
+.paneladmin-page .trading-banner a.editar-mis img {
+    margin-left: 20px;
+}
+.paneladmin-page .trading-banner a.hazte-pro{
+    background-color: #24D4E3;
+    color: #fff
+}
+.paneladmin-page .trading-banner a.personal-conf{
+    margin-left: 0;
+}
+.paneladmin-sec{
+    padding: 60px 0 132px;
+}
+/*======= Account Balance Styling =======*/
+.paneladmin-account{
+    border-bottom: 1px solid rgba(151, 151, 151, 0.4);
+    padding-bottom: 82px;
+}
+.paneladmin-account-box{
+    background-color: #ffffff;
+    border-radius: 4px;
+    height: 375px;
+    padding: 30px;
+}
+.account-title{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.account-title h3{
+    color: #000000;
+    font-family: "Lato",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+.account-title a {
+    color: #23D3E3;
+    display: inline-block;
+    font-size: 14px;
+    font-style: italic;
+}
+.account-title a.anadir {
+    background-color: #24d4e3;
+    border-radius: 4px;
+    color: #ffffff;
+    font-style: normal;
+    height: 38px;
+    line-height: 38px;
+    margin: -20px 0 0;
+    position: relative;
+    text-align: center;
+    top: 12px;
+    width: 87px;
+}
+.acount-balance{
+    text-align: center;
+    padding: 122px 0 100px;
+}
+.acount-balance h3{
+    color: #333333;
+    font-size: 45px;
+    font-weight: 300;
+    font-family: "Lato",sans-serif;
+    margin-bottom: 5px;
+    display: inline-block;
+    position: relative;
+}
+.acount-balance h3:after{
+    position: absolute;
+    content: "";
+    background: url(../img/arrow-up-icon.svg) no-repeat;
+    width: 11px;
+    height: 14px;
+    left: -30px;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.acount-balance span{
+    color: #999999;
+    display: block;
+    font-size: 14px;
+    font-style: italic;
+}
+.operations-carried{
+    padding-top: 43px;
+}
+.multipal-tabs .nav-pills .nav-item {
+    margin-right: 30px;
+}
+.multipal-tabs .nav-pills .nav-item:last-child{
+    margin-right: 0;
+}
+.multipal-tabs .nav-pills .nav-item .nav-link{
+    color: rgba(51, 51, 51, 0.5);
+    font-size: 10px;
+    font-weight: 900;
+    font-family: "Lato",sans-serif;
+    padding:  0 0 6px 0;
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+    letter-spacing: 1px;
+}
+.multipal-tabs .nav-pills .nav-item .nav-link.active{
+    background-color: transparent;
+    border-bottom: 2px solid #24D4E3;
+    color: rgba(51, 51, 51, 1);
+}
+.operations-carried-inner{
+    padding: 76px 0 94px;
+}
+.operations-carried-inner ul{
+    display: flex;
+    justify-content: space-around;
+}
+.operations-carried-inner ul li{
+    color: #333333;
+    font-size: 45px;
+    font-weight: 300;
+    text-align: center;
+}
+.operations-carried-inner ul li span{
+    color: #999999;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    display: block;
+    margin: 5px 0 0;
+}
+.account-billing {
+    padding-top: 62px;
+}
+.account-billing-box {
+    margin-bottom: 50px;
+}
+.account-billing-box h3{
+    color: #666666;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Lato",sans-serif;
+}
+.account-billing-box h3 span{
+    color: #999999;
+    font-size: 14px;
+    font-style: italic;
+    float: right;
+}
+.account-billing-box p{
+    color: rgba(51, 51, 51, 0.5);
+    font-size: 10px;
+    font-weight: 900;
+    margin-top: 13px;
+}
+.billing-sec.content .demo > div {
+    max-height: 320px;
+    overflow: auto;
+}
+.paneladmin-billing{
+    padding-right: 15px;
+}
+.paneladmin-billing .account-title {
+    padding-right: 45px;
+}
+.paneladmin-billing .operations-carried {
+    padding-right: 45px;
+}
+/*======= Referal Program Styling =======*/
+.referal-program{
+    padding-top: 78px;
+}
+.referal-program h3{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Lato",sans-serif;
+    margin-bottom: 50px;
+}
+
+.referal-program-inner .multipal-tabs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+}
+.referal-program-inner .multipal-tabs p {
+    color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.referal-program-inner .multipal-tabs p a {
+    background-color: #23d3e3;
+    border-radius: 50px;
+    display: inline-block;
+    height: 43px;
+    line-height: 43px;
+    margin-left: 20px;
+    text-align: center;
+    width: 43px;
+}
+.referal-program-inner .multipal-tabs p a img {
+    height: 13px;
+    width: 13px;
+}
+.referal-program-inner-box .card{
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+.referal-program-inner-box .card-header{
+    background-color: #fff;
+    padding: 30px 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: none;
+}
+.referal-program-inner-box .card-header.collapsed  .up-arrow a{
+    transform: rotate(0deg);
+    display: inline-block;
+}
+.referal-program-inner-box .card-header .up-arrow a{
+    transform: rotate(180deg);
+    display: inline-block;
+}
+.referal-program-inner-box .socail-link{
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 300px;
+    width: 100%;
+}
+.referal-program-inner-box .socail-link a{
+    display: block;
+    color: #999999;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 13px;
+}
+.referal-program-inner-box .socail-click ul li:first-child{
+    margin-right: 43px;
+}
+.referal-program-inner-box .socail-click ul li:last-child{
+    margin-right: 0;
+}
+.referal-program-inner-box .socail-click ul li{
+    display: inline-block;
+    color: #333333;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-right: 23px;
+}
+.referal-program-inner-box .socail-click ul li span{
+    color: #999999;
+    font-size: 14px;
+    font-style: italic;
+    display: block;
+    margin-top: 5px;
+}
+.referal-program-inner-box .comisiones-btn{
+    position: relative;
+}
+.referal-program-inner-box .comisiones-btn a{
+    width: 130px;
+    height: 40px;
+    color: #24D4E3;
+    border: 1px solid #24D4E3;
+    font-size: 14px;
+    display: inline-block;
+    line-height: 40px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 400;
+    font-style: italic;
+}
+/*======= Comisiones Btn Dropdown Styling =======*/
+.comisiones-btn-dropdown{
+    background: #ffffff none repeat scroll 0 0;
+    border-radius: 6px;
+    box-shadow: 0 2px 24px rgba(0, 0, 0, 0.15);
+    left: 50%;
+    padding: 22px 20px 22px 40px;
+    position: absolute;
+    width: 278px;
+    top: 60px;
+    z-index: 1;
+    transform: translate(-50%,0);
+}
+.comisiones-btn-dropdown .content .demo > div {
+    max-height: 230px;
+}
+.comisiones-btn-dropdown h3{
+    color: #222222;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: "Lato",sans-serif;
+    letter-spacing: 1px;
+    padding-right: 50px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+.comisiones-btn-dropdown ul{
+    padding-right: 50px;
+}
+.comisiones-btn-dropdown ul li{
+    margin-bottom: 31px;
+}
+.comisiones-btn-dropdown ul li h4{
+    color: #333333;
+    font-size: 15px;
+    font-weight: 400;
+}
+.comisiones-btn-dropdown ul li h4 span{
+    color: #999999;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    float: right;
+}
+.comisiones-btn-dropdown ul li p{
+    color: #999999;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic; 
+}
+.comisiones-btn-dropdown ul li p.red-color{
+    color: #E3235F;
+}
+.referal-program-inner-box .card-body{
+    border-top: 1px solid rgba(151, 151, 151, 0.30);
+    padding: 77px 55px;
+}
+.referal-program-graph-box .text-box h4{
+    color: #222222;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+.saldo-dropdown {
+    background: #ffffff none repeat scroll 0 0;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 24px rgba(0, 0, 0, 0.15);
+    left: 50% !important;
+    top: 51px !important;
+    transform: translate(-50%, 0px) !important;
+    width: 440px;
+    padding: 40px;
+}
+.saldo-dropdown h4{
+    color: #222222;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+.saldo-dropdown  .form-group label{
+    color: #222222;
+    font-size: 10px;
+    font-weight: 900;
+    padding-bottom: 20px;
+    display: block;
+    letter-spacing: 1px;
+    padding-left: 35px;
+}
+.saldo-dropdown .form-group .form-control{
+    border: 1px solid #e4e4e4;
+    border-radius: 22.5px;
+    color: #999999;
+    font-family: "Lato",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: 45px;
+    width: 100%;
+}
+.saldo-dropdown .form-group .btn-defult{
+    background-color: #23d3e3;
+    border: medium none;
+    border-radius: 4px;
+    color: #ffffff;
+    display: inline-block;
+    font-family: "Lato",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 33px;
+    text-align: center;
+    height: 38px;
+    line-height: 38px;
+    padding: 0;
+    cursor: pointer;
+    width: 100%;
+    max-width: 117px;
+}
+.multipal-tabs .dropdown  .saldo-dropdown {
+    left: auto !important;
+    right: 0 !important;
+    transform: translate(0px) !important;
+}
+/*======= Edit Personal Information Modal Styling =======*/
+.edit-personal-information-inner h3{
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+.edit-personal-information-inner .form-group{
+    position: relative;
+    margin-bottom: 50px;
+}
+.edit-personal-information-inner .form-group label{
+    color: #222222;
+    display: block;
+    font-family: "Lato",sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    letter-spacing: 1px;
+}
+.edit-personal-information-inner .form-group .from-control{
+    border: 1px solid #e4e4e4;
+    border-radius: 22.5px;
+    color: #999999;
+    font-family: "Lato",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: 45px;
+    padding-left: 35px;
+    width: 100%;
+}
+.edit-personal-information-inner .form-group span{
+    position: absolute;
+    right: 25px;
+    top: 43px;
+}
+.edit-personal-information-inner .form-group span img{
+    width: 18px;
+    height: 18px;
+}
+.edit-personal-information-inner .anadir-dropdown-box{
+    box-shadow: none;
+    display: block !important;
+    padding: 0;
+    position: static;
+    width: 100%;
+}
+.edit-personal-information-inner .anadir-dropdown-box h3{
+    margin-bottom: 33px;
+}
+.edit-personal-information-inner  .anadir-dropdown-box ul{
+    padding: 0; 
+}
+.edit-personal-information-inner  .anadir-dropdown-box ul li {
+    float: left;
+    margin: 0 0 40px 0;
+    width: 33.3%;
+}
+.edit-personal-information-inner  .anadir-dropdown-box ul li a {
+    height: 102px;
+    line-height: 102px;
+    max-width: 198px;
+    width: 100%;
+}
+.edit-personal-information-inner .anadir-dropdown-box ul li a img.captura-img {
+    height: auto;
+    left: 50%;
+    margin: 0;
+    max-width: inherit;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+}
+.edit-personal-information-inner .form-group a {
+    background-color: #23d3e3;
+    border-radius: 3px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+
+    text-align: center;
+    width: 225px;
+}
+.edit-personal-information-inner .form-group a img {
+    margin-left: 100px;
+    vertical-align: middle;
+    width: 26px;
+}
+/*======= Become Pro Modal Styling =======*/
+.become-pro-hedding{
+    margin-bottom: 70px;
+}
+.become-pro-hedding h3{
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    font-family: "Lato",sans-serif;
+}
+.become-pro-hedding p{
+    color: #333333;
+    font-size: 25px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 42px;
+}
+.become-pro-inner .pricing-box {
+    border: 1px solid #e4e4e4;
+    border-radius: 4px;
+    min-height: auto;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+}
+.become-pro-inner .pricing-box p{
+    text-align: left;
+}
+.become-pro-inner .pricing-box ul {
+    padding-left: 25px;
+    padding-top: 0;
+    text-align: left;
+}
+.upgrade-btn a{
+    background-color: #23d3e3;
+    border-radius: 3px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 225px;
+}
+.upgrade-btn a img {
+    margin-left: 100px;
+    vertical-align: middle;
+    width: 26px;
+}
+/*======= Payment Method Styling =======*/
+.payment-modal .modal-body{
+    padding: 0;
+}
+.payment-modal  .become-pro-hedding{
+    padding: 60px 90px 0;
+}
+.payment-modal  .become-pro-hedding h3 {
+    margin-bottom: 44px;
+}
+.payment-method .nav {
+    display: flex;
+    justify-content: center;
+}
+.payment-method .nav .nav-item {
+    text-align: center;
+    width: 25%;
+}
+.payment-method .nav .nav-item .nav-link {
+    border-bottom: 2px solid #cccccc;
+    border-radius: 0;
+    color: #999999;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 0 27px;
+    position: relative;
+}
+.payment-method .nav .nav-item .nav-link::after {
+    background-color: #23d3e3;
+    bottom: -2px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transition: all 0.5s ease-in-out 0s;
+    width: 0;
+}
+.payment-method .nav .nav-item .nav-link.active::after {
+    transition: all 0.5s ease-in-out 0s;
+    width: 100%;
+}
+.payment-method .nav .nav-item .nav-link.active {
+    background-color: rgba(0, 0, 0, 0);
+    color: #000000;
+}
+.payment-method .payment-method-inner {
+    padding: 60px 90px;
+}
+/*======= DropDown Styling =======*/
+.login-right ul li.dropdown .dropdown-menu {
+    width: 288px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.15);
+    padding: 40px 0 0;
+    border: none;
+    left: 50% !important;
+    transform: translate(-50%,0) !important;
+    top: 30px !important;
+}
+.login-right ul li.dropdown .dropdown-menu ul{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.login-right ul li.dropdown .dropdown-menu ul li{
+    width: 100%;
+    text-align: left; 
+    margin: 0 0 40px 0 ;
+}
+.login-right ul li.dropdown .dropdown-menu ul li a{
+    color: #999999 !important;
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+    padding-left: 25px;
+}.login-right ul li.dropdown .dropdown-menu ul li:first-child:after{
+    display: none;
+}
+.login-right ul li.dropdown .dropdown-menu ul li a img{
+    margin-right: 22px;
+    margin-left: 0;
+}
+.login-right ul li.dropdown .dropdown-menu ul li:last-child{
+    border-top: 1px solid rgba(151, 151, 151, 0.2);
+    padding-top: 30px;
+}
+/*======= Setting Dropdown Style =======*/
+.login-right ul li.setting .dropdown-menu{
+    padding: 26px 20px 26px 40px; 
+}
+.login-right ul li.setting .dropdown-menu .visualizattion{
+    padding-right: 40px;
+}
+.login-right ul li.setting .dropdown-menu .visualizattion h3{
+    color: #222222;
+    font-size: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.login-right ul li.setting .dropdown-menu .visualizattion-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+
+} 
+.login-right ul li.setting .dropdown-menu .visualizattion-box p{
+    color: #999999;
+    font-size: 14px;
+} 
+.login-right ul li.setting .dropdown-menu .language{
+    margin-top: 33px;
+    padding-right: 40px;
+}
+.login-right ul li.setting .dropdown-menu .language h3{
+    color: #222222;
+    font-size: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.login-right ul li.setting .dropdown-menu .language .form-control{
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: currentcolor currentcolor currentcolor #979797;
+    border-image: none;
+    border-radius: 0;
+    border-style: none none none solid;
+    border-width: medium medium medium 1px;
+    box-shadow: none;
+    color: #999999;
+    font-size: 14px;
+    font-style: italic;
+    height: 23px;
+    width: 100%;
+}
+.login-right ul li.setting .dropdown-menu .language ul li{
+    margin: 0 0 20px 0;
+}
+.login-right ul li.setting .dropdown-menu .language ul li:first-child:after{
+    display: none;
+}
+.login-right ul li.setting .dropdown-menu .language ul li:last-child{
+    padding: 0;
+    border: none;
+}
+.login-right ul li.setting .dropdown-menu .language  .buy-alarm {
+    padding: 27px 0 0;
+}
+.login-right ul li.setting .dropdown-menu .language .buy-alarm [type="radio"]:checked + label, .login-right ul li.setting .dropdown-menu .language .buy-alarm [type="radio"]:not(:checked) + label {
+    display: block;
+    padding-left: 0;
+    color: #999999;
+    font-size: 14px;
+}
+.login-right ul li.setting .dropdown-menu .language .buy-alarm [type="radio"]:checked + label::before, .login-right ul li.setting .dropdown-menu .language [type="radio"]:not(:checked) + label::before,
+.login-right ul li.setting .dropdown-menu .language .buy-alarm [type="radio"]:checked + label::after, .login-right ul li.setting .dropdown-menu .language [type="radio"]:not(:checked) + label::after{
+    right: 0;
+    left: auto;
+}
+
+.login-right ul li.setting .dropdown-menu .content .demo > div {
+    max-height: 285px; 
+}
+.mobile-version{
+    display: none;
+}
+/*======= Socail Network Filter Sidebar Styling =======*/
+.socail-network-filter-sidebar.active{
+    left: 0;
+    transition: all 0.5s ease-in-out;
+}
+.socail-network-filter-sidebar{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 282px;
+    height: 100%;
+    background-color: #fff;
+    padding: 53px 40px;
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+}
+.socail-network-filter-sidebar .socail-publicar-top{
+    display: block;
+}
+.socail-network-filter-sidebar .socail-publicar-top h3{
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 55px;
+    font-weight: 400;
+}
+.socail-network-filter-sidebar .socail-publicar-top .form-control{
+    border: 1px solid #E4E4E4;
+    width: 100%;
+}
+.socail-network-filter-sidebar .btn-defult {
+    background-color: #23d3e3;
+    border: medium none;
+    border-radius: 4px;
+    bottom: 20px;
+    color: #ffffff;
+    font-size: 14px;
+    left: 50%;
+    padding: 0 40px;
+    position: absolute;
+    transform: translate(-50%, 0px);
+    width: 242px;
+}
+.socail-network-filter-sidebar .btn-defult img{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    right: 40px;
+}
+.overlay.active{
+    display: block;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.20);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    opacity: 0;
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+/*======= Trading Copy Detail Mobile Styling =======*/
+.trading-copy-detail-mobile .card{
+    background-color: #fff;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 30px;
+}
+.trading-copy-detail-mobile .card .card-header{
+    border: none;
+    background-color: transparent;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.trading-copy-detail-mobile .card .card-header .card-header-left{
+    display: flex;
+    align-items: center;
+}
+.trading-copy-detail-mobile .card .card-header .card-header-left .text-box{
+    padding-left: 15px;
+}
+.trading-copy-detail-mobile .card .card-header .card-header-left .text-box h4{
+    color: #333333;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Lato",sans-serif;
+}
+.trading-copy-detail-mobile .card .card-boday{
+    border-top: 1px solid rgba(151, 151, 151, 0.20);
+    padding: 30px 20px;
+}
+.trading-copy-detail-mobile .card .card-boday h4{
+    color: #222222;
+    font-size: 10px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    font-family: "Lato",sans-serif;
+    letter-spacing: 1px;
+}
+.trading-copy-detail-mobile .card .card-boday p{
+    color: #333333;
+    font-family: "Lato",sans-serif;
+    font-size: 14px;
+    font-weight: 400; 
+}
+.trading-copy-detail-mobile .card .card-boday .month-gain p{
+    color: #666666;
+    font-size: 12px;
+    font-style: italic;
+}
+.trading-copy-detail-mobile .card .card-boday .month-gain p img{
+    height: 9px;
+    margin-left: 10px;
+    margin-right: 4px;
+    position: relative;
+    top: 4px;
+    width: 7px;
+}
+.trading-copy-detail-mobile .card .card-boday .copy{
+    background-color: #24d4e3;
+    border-radius: 4px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    width: 87px;
+}
+/*======= Cnfiguration Setting SideBar Mobile Styling =======*/
+.Configuration-setting{
+    background-color: #fff;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 282px;
+    height: 100%;
+    padding-top: 43px;
+    padding-left: 40px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+}
+.Configuration-setting.active{
+    right: 0;
+    transition: all 0.5s ease-in-out;
+}
+.Configuration-setting-inner .visualizattion {
+    padding-right: 40px;
+}
+.Configuration-setting-inner .visualizattion h4{
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+.Configuration-setting-inner .visualizattion h3{
+    color: #222222;
+    font-size: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.Configuration-setting-inner .visualizattion-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+}
+.Configuration-setting-inner .visualizattion-box p{
+    color: #999999;
+    font-size: 14px;
+}
+.Configuration-setting-inner .language {
+    margin-top: 33px;
+    padding-right: 40px;
+}
+.Configuration-setting-inner .language h3 {
+    color: #222222;
+    font-size: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.Configuration-setting-inner .language .form-control {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: currentcolor currentcolor currentcolor #979797;
+    border-image: none;
+    border-radius: 0;
+    border-style: none none none solid;
+    border-width: medium medium medium 1px;
+    box-shadow: none;
+    color: #999999;
+    font-size: 14px;
+    font-style: italic;
+    height: 23px;
+    width: 100%;
+}
+.Configuration-setting-inner .language .buy-alarm {
+    padding: 27px 0 0;
+}
+.Configuration-setting-inner .language .buy-alarm  [type="radio"]:checked + label, .Configuration-setting-inner .language .buy-alarm  [type="radio"]:not(:checked) + label{
+    display: block;
+    padding-left: 0;
+}
+.Configuration-setting-inner .language .buy-alarm [type="radio"]:checked + label::after, .Configuration-setting-inner .language .buy-alarm [type="radio"]:not(:checked) + label::after{
+    left: auto;
+    right: 0;
+}
+.Configuration-setting-inner .language .buy-alarm [type="radio"]:checked + label::before, .Configuration-setting-inner .language .buy-alarm [type="radio"]:not(:checked) + label::before{
+    left: auto;
+    right: 0;
+}
+.Configuration-setting .content .demo > div {
+    max-height: 500px;
+    overflow: auto;
+}
+/*======= Fbaez Sidebar SideBar Mobile Styling =======*/
+.fbaez-sidebar{
+    background-color: #3866F7;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 282px;
+    height: 100%;
+    padding-top: 43px;
+    padding-left: 40px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+}
+.fbaez-sidebar.active{
+    right: 0;
+    transition: all 0.5s ease-in-out;
+}
+.fbaez-sidebar .fbaez-back {
+    margin-bottom: 80px;
+}
+.fbaez-sidebar .fbaez-back  a{
+    color: #fff;
+    font-size: 14px;
+    font-style: italic;
+}
+.fbaez-sidebar .fbaez-back a img{
+    height: 11px;
+    transform: rotate(180deg);
+    width: 14px;
+    margin-right: 23px;
+}
+.fbaez-sidebar .text-box ul li{
+    margin-bottom: 40px;
+}
+.fbaez-sidebar .text-box ul li a{
+    color: #fff;
+    font-size: 14px;
+}
+.fbaez-sidebar .text-box ul li a img{
+    vertical-align: middle;
+    margin-right: 30px;
+}
+.fbaez-sidebar .text-inner {
+    bottom: 56px;
+    left: 0;
+    padding-left: 40px;
+    position: absolute;
+    width: 100%;
+}
+.fbaez-sidebar .text-inner a{
+    color: #fff;
+    font-size: 14px;
+}
+.fbaez-sidebar .text-inner a img{
+    vertical-align: middle;
+    margin-right: 22px;
+}
+/*======= Dark Page Styling =======*/
+.dark-mode,
+.dark-mode .alert{
+    background-color: #0A1133 !important;
+}
+.dark-mode .trading-copy-top-main,
+.dark-mode .news-info-mobile,
+.dark-mode .trading-copy-detail-mobile .card,
+.dark-mode .news-info-dasktop{
+    background-color: #111A42;
+}
+.dark-mode .trading-copy-top .trading-copy-top-rigth .form-control{
+    color: rgba(255, 255, 255, 0.40);
+    border-left: 1px solid rgba(255, 255, 255, 0.80);
+}
+.dark-mode .trading-copy-top .trading-copy-top-left .form-control{
+    background-color: transparent;
+    border: 1px solid rgba(288, 288, 288, 0.20);
+    color: rgba(255, 255, 255, 0.40);
+}
+.dark-mode .trading-copy-detail table thead tr th,
+.dark-mode .alert p{
+    color: #fff;
+}
+.dark-mode .trading-copy-detail table tbody tr td{
+    background-color: transparent;
+    border-bottom: none;
+    color: #fff;
+}
+.dark-mode .trading-copy-detail table tbody tr td .text-box h4,
+.dark-mode .trading-copy-detail table tbody tr td p,
+.dark-mode .pagination ul li a,
+.dark-mode .footer-inner h3{
+    color: #fff;
+}
+.dark-mode .trading-copy-detail table tbody tr:nth-child(even) {background: transparent;}
+.dark-mode .trading-copy-detail table tbody tr:nth-child(odd) {background: #10183E;}
+.dark-mode .footer{
+    background-color: #111A42;
+}
+.dark-mode .footer-inner p{
+    color: rgba(255, 255, 255, 0.50);
+}
+.dark-mode .footer-links ul li a{
+    color: rgba(255, 255, 255, 0.40);
+    opacity: 1;
+}
+.dark-mode .trading-copy-detail-mobile .card .card-header .card-header-left .text-box h4,
+.dark-mode .trading-copy-detail-mobile .card .card-boday h4,
+.dark-mode .trading-copy-detail-mobile .card .card-boday p,
+.dark-mode .footer-inner h3 a{
+    color: #fff;
+}
